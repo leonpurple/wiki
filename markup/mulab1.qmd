@@ -3,10 +3,9 @@ title: "Lab 1: Create and publish by Quarto"
 ---
 
 ## Overview
-
 Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) with Visual (IDE) Code and Quarto (publishing system/engine)
 
-::: {.callout-note icon=false}
+::: {.callout-note icon=false  collapse="false"}
 ## Lab 1: Publishing website by Quarto engine
 
 ::: {.tab-nav}
@@ -24,14 +23,34 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
 ### Before
 >Students will need to have a **basic understanding of web development**, including HTML, CSS, and JavaScript.
 
-[Up to Overview](/markup/mulab1.qmd#overview)
+::: {.tab-nav}
+[Before](#before){.tab-link}
+
+[Goal](#goal){.tab-link}
+
+[Tasks](#tasks){.tab-link}
+
+[After](#after){.tab-link}
+
+[Optional](#optional){.tab-link}
+:::
 :::
 
 ::: {.tab-content #goal}
 ### Goal
 >In this project, students will be required to create a **web application using HTML, CSS, and JavaScript**. They will also need to understand and use **Markdown to format their project's documentation**. Additionally, they will need to use GitHub and Visual Code to manage their project's code and collaborate with their peers.
 
-[Up to Overview](/markup/mulab1.qmd#overview)
+::: {.tab-nav}
+[Before](#before){.tab-link}
+
+[Goal](#goal){.tab-link}
+
+[Tasks](#tasks){.tab-link}
+
+[After](#after){.tab-link}
+
+[Optional](#optional){.tab-link}
+:::
 :::
 
 ::: {.tab-content #tasks}
@@ -40,7 +59,17 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
 >
 >In the second part of the project, students will learn how to **publish their website on gh-pages**, a service provided by Github for hosting static websites. This will involve learning how to use the gh-pages service and how to deploy their website to the internet.
 
-[Up to Overview](/markup/mulab1.qmd#overview)
+::: {.tab-nav}
+[Before](#before){.tab-link}
+
+[Goal](#goal){.tab-link}
+
+[Tasks](#tasks){.tab-link}
+
+[After](#after){.tab-link}
+
+[Optional](#optional){.tab-link}
+:::
 :::
 
 ::: {.tab-content #optional}
@@ -59,15 +88,36 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
 >
 > - [Quarto data sources](/markup/markupquartoprogramming.qmd)
 
-[Up to Overview](/markup/mulab1.qmd#overview)
+::: {.tab-nav}
+[Before](#before){.tab-link}
+
+[Goal](#goal){.tab-link}
+
+[Tasks](#tasks){.tab-link}
+
+[After](#after){.tab-link}
+
+[Optional](#optional){.tab-link}
+:::
 :::
 
 ::: {.tab-content #after}
 ### After
 >The Quarto website project is a great opportunity for students to develop their skills in **web development, markdown, and version control using GitHub and Visual Code**.
 
-[Up to Overview](/markup/mulab1.qmd#overview)
+::: {.tab-nav}
+[Before](#before){.tab-link}
+
+[Goal](#goal){.tab-link}
+
+[Tasks](#tasks){.tab-link}
+
+[After](#after){.tab-link}
+
+[Optional](#optional){.tab-link}
 :::
+:::
+
 :::
 
 ## Step-by-step
@@ -87,5 +137,22 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
     2. [Improve your Quarto Project](/markup/markupquarto.qmd)
 5. Go to published web:`user/github.io/repo`
 
+## Screenshoots (2022-12-08)
 
+:::{.callout-note  collapse="false" }
+## Basic Quarto Project
 
+![fig 1](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(1).png)
+:::
+
+:::{.callout-note  collapse="false" }
+
+## Initialize Repository and Publish
+
+![fig 2](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(2).png)
+:::
+:::{.callout-note  collapse="false" }
+## You may use another Extensions
+
+![fig 3](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(3).png)
+:::

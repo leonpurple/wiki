@@ -1,5 +1,64 @@
 ---
-title: "Lab 1: subject"
+title: "Lab 1: Maven/Gradle Person and Account"
 ---
 
-About this site
+## Overview
+
+Create a Maven/Gradle Java SE Project with three classes and Junit to test objects and operations.
+
+---
+
+<div class="labs">
+<h5>Lab 1: Maven/Gradle Person and Account tested by JUnit</h5>
+</hr>
+<div class="tabs">
+  <input type="radio" class="tabs__radio" name="tabs-example" id="before" checked>
+  <label for="before" class="tabs__label">Before</label>
+  <div class="tabs__content">
+
+> In order to complete this project, you will need to have a **basic understanding of the Java programming language**, as well as some familiarity with **Maven or Gradle for managing dependencies** and building the project. 
+>
+> Additionally, you will need to have some knowledge of algorithms and data structures to implement the required classes.
+  </div>
+  <input type="radio" class="tabs__radio" name="tabs-example" id="goal">
+  <label for="goal" class="tabs__label">Goal</label>
+  <div class="tabs__content">
+
+> The goal of this project is to **create three classes in Java** that implement different algorithms or data structures, and to test them using JUnit.
+>
+> These classes could include, for example, creating new objects, a data structure for storing and manipulating data, or a utility class for performing common operations.
+  </div>
+    <input type="radio" class="tabs__radio" name="tabs-example" id="tasks">
+  <label for="tasks" class="tabs__label">Tasks</label>
+  <div class="tabs__content">
+
+>The tasks involved in this project include:
+>
+> 1. Creating a **new Maven or Gradle project** and setting up the project structure.
+> 2. Modifying the project's `pom.xml` or `build.gradle` file to import the necessary dependencies, including **JUnit** for testing.
+> 3. Implementing the three required classes in Java, using appropriate algorithms and data structures.
+> 4. Writing **JUnit tests** to verify that the classes work as expected.
+  </div>
+    <input type="radio" class="tabs__radio" name="tabs-example" id="after">
+  <label for="after" class="tabs__label">After</label>
+  <div class="tabs__content">
+
+> As an optional task, you could also consider **allowing the user to input data via the console**, rather than using `hard-coded test data` in your JUnit tests.
+>
+> This would allow you to test the classes with a variety of different input data, and to <mark>interact</mark> with the classes in a more dynamic way.
+  </div>
+<input type="radio" class="tabs__radio" name="tabs-example" id="optional">
+  <label for="optional" class="tabs__label">Optional</label>
+  <div class="tabs__content">
+
+>Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.
+>
+> By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future.
+  </div>
+</div>
+<div>
+
+## Step-by-step
+
+
+

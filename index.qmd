@@ -10,17 +10,17 @@ title: "Home"
 ::: {.summary}
 📘 **Developer skills summary**
 
-- Algorithmic
+- Algorithmic, OOP, COP
+- Architecture in mind - Systems Design
 - Control Version Systems
 - DevOps
-- Architecture in mind
--  SCRUM
+- SCRUM
 :::
+---
 
+This wiki is focused in Web App development and the skills set needed. Nowadays a developer (not a coder) must have this skills set:
 
-This site as a wiki style is focused in programming and the skills set needed. Nowadays a programmer (not a coder) must have this skills set:
-
-- **Algorithmic**, (let's say microprogrammation vs. architecture and macro-programming skills). That is, for example the current most used and modern paradigms:
+- **Algorithmic**, (let's say micro-development vs. architecture and macro-development skills). That is, for example the current most used and modern paradigms:
     - Scripting: BASH
     - Structured and Procedural: C
     - POO: [Java SE](https://java-programming.mooc.fi/)

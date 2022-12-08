@@ -35,7 +35,6 @@ he steps in writing a Java program is illustrated as above:
 2. Compile the source code `Person.java` into <mark>Java portable bytecode</mark> (or machine code) `Person.class` using the **JDK's Java compiler** by issuing the command  `javac Person.java`.
 3. Run the compiled bytecode `Person.class`, using the **JDK's Java Runtime** by issuing the command `java Person`..
 
-
 ## Type system
 
 - **Safe**: Java's type system helps to prevent errors by ensuring that values stored in variables are always of the correct type. This helps to avoid type-related runtime errors and makes Java programs more reliable.
@@ -52,6 +51,5 @@ EE provides a set of APIs and tools for developing distributed, transactional, a
 
 JEE is often used for **building large-scale, complex, and mission-critical applications** in industries such as finance, healthcare, and e-commerce.
 
-
-
 [Java Vocabulary](/vocabulary/vocabjava.qmd)
+

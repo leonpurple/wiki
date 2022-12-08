@@ -1,4 +1,6 @@
 /* css styles */
+/* @import "w3.css" */
+
 .indent {
     margin-left: 40px;
 }
@@ -11,17 +13,16 @@ img {
     padding: 2px 16px;
 }
 
-
 .mermaidContent {
     display: -webkit-flexbox;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-flex-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-        justify-content: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .summary{
@@ -33,11 +34,10 @@ img {
 }
 
 
-/* tab styling */
+/* tab styling  method 1*/
 .tab-content {
     padding: 10px;
     border: none
-  
 }
 
 .tab-nav {
@@ -46,15 +46,14 @@ img {
 
 .tab-link {
     display: flex;
-    align-items: center;
-    width: 100px;
-    height: 30px;
+    align-items: left;
+    width: 60px;
+    height: 10px;
     margin-right: -1px;
     padding-right: 5px;
-    padding-left: 5px;
+    padding-left: 15px;
     font-size: 16px;
     text-decoration: none;
-    
 }
 
 .tab-content:not(:target) {
@@ -63,4 +62,46 @@ img {
 
 .tab-content:target {
     display: block;
+}
+
+.labs {
+    padding: 16px 16px 16px 16px;
+        background: #102641;
+        border: #ffffff6b;
+        color: #9ea0b8;
+        border-radius: 10px 10px 10px 10px;
+      
+}
+
+/* tab styling  method 2*/
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tabs__label {
+    padding: 10px 16px;
+    font-size: 1.1em;
+   
+}
+
+.tabs__radio {
+    display: none;
+}
+
+.tabs__content {
+    order: 1;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+}
+
+.tabs__radio:checked+.tabs__label {
+    color:#1E90FF;
+}
+
+.tabs__radio:checked+.tabs__label+.tabs__content {
+    display: initial;
 }
