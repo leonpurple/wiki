@@ -1,0 +1,10 @@
+---
+title: "IFCD0210 Calendar"
+---
+
+## Calendar
+![Calendar 2023](/images/ifcd0210/calendar_2023.png){.preview-image}
+
+## Forecast semester
+
+[IFCD0210 Cifo Web 2022-2023](https://docs.google.com/spreadsheets/d/e/2PACX-1vSLNGWBsUyn-IldZ3NV9KbNVfKO45nKV3wIbQk_46V1XZWjJ898RbiSU77kXjSUYbUmEl3glIw19GO6/pubhtml)

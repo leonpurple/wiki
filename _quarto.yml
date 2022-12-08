@@ -1,0 +1,306 @@
+project:
+  type: website
+
+website:
+  title: albertprofe wiki
+  cookie-consent:
+    type: express
+    style: headline
+    palette: dark
+
+  repo-url: https://github.com/quarto-dev/quarto-demo
+  repo-actions: [edit, issue]
+
+  navbar:
+    background: dark
+    style: "floating"
+    search: true
+    
+    right:
+      - text: Home
+        file: index.qmd
+      - text: SCRUM
+        file: scrum/scrum.qmd
+      - text: Markup & Style
+        file: markup/markupintro.qmd     
+      - text: Java SE
+        file: javase/sebasics.qmd 
+      - text: Spring
+        file: spring/spring.qmd
+      - text: React JS
+        file: reactjs/reactjs.qmd  
+      - text: DevOps
+        file: devops/introductiondevops.qmd
+      - text: "Vocabulary"
+        file: vocabulary/vocabgeneral.qmd
+      - text: "IFCD0210"
+        file: ifcd0210/ifcd0210.qmd
+      - text: About
+        file: about/aboutthissite.qmd
+   
+
+  sidebar:
+    - title: "DevOps"
+      border: true
+      background: none
+      style: "floating"
+      contents:
+        - text: "DevOps"
+        - text: "---"  
+        - section: "What is DevOps"
+          contents: 
+            - devops/introductiondevops.qmd
+            - devops/devops.qmd
+        - text: "---"  
+        - section: "Documentation"
+          contents: 
+            - devops/quarto.qmd
+        - text: "---"  
+        - section: "Version Control"
+          contents: 
+            - devops/git.qmd
+            - devops/github.qmd
+        - text: "---" 
+        - section: "IDEs"
+          contents: 
+            - devops/visualcode.qmd
+            - devops/intelljidea.qmd
+        - text: "---"           
+        - section: "DevOps tools"
+          contents:
+            - devops/aws.qmd 
+            - devops/docker.qmd
+            - devops/jenkins.qmd
+            - devops/k8s.qmd
+            - devops/digitalocean.qmd
+            - devops/installjenkins.qmd
+            - devops/installmaven.qmd
+        - text: "---"      
+        - section: "DevOps Laboratories"
+          contents: 
+            - devops/chatapp.qmd
+            - devops/springbooksintro.qmd
+            - devops/springbookss3.qmd
+            - devops/springbooksdocker.qmd
+            - devops/k8sdigitalocean.qmd
+        - text: "---"  
+        - section: "DevOps readings"
+          contents: 
+            - devops/resources.qmd
+
+    - title: "MarkUp"
+      contents: 
+        - text: "MarkUp Languages and Styling"
+        - text: "---"  
+        - section: "MarkUp Languages"
+          contents: 
+            - markup/markupintro.qmd
+            - markup/markuphtml.qmd
+            - markup/markupdown.qmd
+        - text: "---"  
+        - section: "Quarto Markdown"
+          contents: 
+            - markup/markupquarto.qmd
+            - markup/markupquartocreating.qmd
+            - markup/markupquartopublishing.qmd
+            - markup/markupquartoprogramming.qmd
+        - text: "---"  
+        - section: "Styling: CSS"
+          contents: 
+            - markup/markupcss.qmd
+            - markup/markupw3css.qmd
+        - text: "---"  
+        - section: "MarkUp Languages Laboratories"
+          contents: 
+            - markup/mulab1.qmd
+        - text: "---" 
+        - section: "MarkUp Languages readings"
+          contents: 
+            - markup/resources.qmd
+            
+    - title: "SCRUM"
+      contents: 
+        - text: "SCRUM"
+        - text: "---"  
+        - section: "What is SCRUM"
+          contents: 
+            - scrum/scrum.qmd
+            - scrum/agilemanifesto.qmd
+            - scrum/scrumguide.qmd
+            - scrum/digitaltoolsscrum.qmd
+        - text: "---"  
+        - section: "Weeks"
+          contents: 
+            - scrum/week1.qmd
+            - scrum/week2.qmd
+            - scrum/week3.qmd
+            - scrum/week4.qmd
+            - scrum/week5.qmd
+ 
+    - title: "Java SE"
+      contents: 
+        - text: "Java Standard Edition"
+        - text: "---"  
+        - section: "Java Principles"
+          contents: 
+            - javase/sebasics.qmd
+            - javase/seprinciples.qmd
+            - javase/javasemoochelsinki.qmd
+            - javase/seencapsulation.qmd
+            - javase/seabstraction.qmd
+            - javase/seinheritance.qmd
+            - javase/sepolymorphism.qmd
+        - text: "---"  
+        - section: "Java Design Patterns"
+          contents: 
+            - javase/sepatterns.qmd
+            - javase/sesingleton.qmd
+            - javase/sefactory.qmd
+            - javase/seobserver.qmd
+            - javase/sebuilder.qmd
+        - text: "---"  
+        - section: "Java SE Laboratories"
+          contents: 
+            - javase/selab1.qmd
+            - javase/selab2.qmd
+            - javase/selab3.qmd
+            - javase/selab4.qmd
+            - javase/selab5.qmd
+        - text: "---" 
+        - section: "Java SE readings"
+          contents: 
+            - javase/resources.qmd
+
+    - title: "Spring"
+      contents:
+        - text: "Spring"
+        - text: "---"  
+        - section: "Spring"
+          contents: 
+            - spring/spring.qmd
+        - text: "---"  
+        - section: "Spring MVC"
+          contents: 
+            - springmvc/springmvc.qmd
+        - text: "---"  
+        - section: "Spring Boot"
+          contents: 
+            - springboot/springboot.qmd
+        - text: "---"  
+        - section: "Spring Boot Laboratories"
+          contents: 
+            - springboot/sblab1.qmd
+            - springboot/sblab2.qmd
+            - springboot/sblab3.qmd
+            - springboot/sblab4.qmd
+            - springboot/sblab5.qmd
+        - text: "---" 
+        - section: "Spring Boot readings"
+          contents: 
+            - springboot/resources.qmd
+        
+    - title: "React JS"
+      contents: 
+        - text: "React JS"
+        - text: "---"  
+        - section: "React JS Principles"
+          contents: 
+            - reactjs/reactjs.qmd
+        - text: "---"  
+        - section: "React JS Hooks"
+          contents: 
+            - reactjs/hookstate.qmd
+            - reactjs/hookreducer.qmd
+            - reactjs/hookref.qmd
+            - reactjs/hookeffect.qmd
+            - reactjs/hookcustom.qmd
+        - text: "---"  
+        - section: "Context and Provider"
+          contents: 
+            - reactjs/reactjscontext.qmd
+        - text: "---"  
+        - section: "React JS Laboratories"
+          contents: 
+            - reactjs/rjslab1.qmd
+            - reactjs/rjslab2.qmd
+            - reactjs/rjslab3.qmd
+            - reactjs/rjslab4.qmd
+            - reactjs/rjslab5.qmd
+        - text: "---" 
+        - section: "React JS readings"
+          contents: 
+            - reactjs/resources.qmd
+
+    
+    - title: "IFCD0210"
+      contents: 
+        - text: "IFCD0210"
+        - text: "---"  
+        - section: "Web App IFCD0210"
+          contents: 
+            - ifcd0210/ifcd0210.qmd
+            - ifcd0210/ifcd0210calendar.qmd  
+            - ifcd0210/ifcd0210initemail.qmd  
+            - ifcd0210/ifcd0210deliveries.qmd  
+        
+    - title: "Vocabulary"
+      contents: 
+        - text: "Vocabulary"
+        - text: "---"  
+        - section: "General Vocabulary"
+          contents: 
+            - vocabulary/vocabgeneral.qmd
+            - vocabulary/vocabscrum.qmd
+            - vocabulary/vocabdevops.qmd
+        - text: "---"  
+        - section: "Back-end Vocabulary"
+          contents: 
+            - vocabulary/vocabjava.qmd
+            - vocabulary/vocabspringboot.qmd
+            - vocabulary/vocabdatabase.qmd
+        - text: "---"  
+        - section: "Front-end Vocabulary"
+          contents: 
+            - vocabulary/vocabreactjs.qmd 
+            - vocabulary/vocabweb.qmd          
+
+    - title: "About"
+      contents: 
+        - text: "About"
+        - text: "---"  
+        - section: "About"
+          contents: 
+            - about/aboutme.qmd
+            - about/aboutthissite.qmd
+            - about/aboutlearning.qmd
+            - about/aboutimagescredit.qmd 
+            - about/aboutquestions.qmd                   
+  
+  
+  page-footer: 
+    background: dark
+    left: "[Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)" 
+    center: "if you want to go far, walk slow" 
+    right: 
+      - icon: github
+        href: https://github.com/AlbertProfe/
+      - icon: twitter 
+        href: https://twitter.com/ 
+
+format:
+  html:
+    fontsize:  "1.0em"
+    theme:
+      light: default
+      dark: superhero
+    css: styles.css
+    toc: true
+    toc-depth: 5
+    email-obfuscation: javascript
+    
+execute:
+  cache: true
+  freeze: auto
+
+
+

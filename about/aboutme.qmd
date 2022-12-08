@@ -1,0 +1,26 @@
+---
+title: "About me"
+---
+
+## Introduction
+Hi, this is **alberprofe** speaking! My fields of expertise are ... let's OpenAI introduce them:
+
+> A **software architect** is a person who is responsible for the overall design and architecture of a software system. They are responsible for creating a high-level design that defines the structure and behavior of the system, as well as for ensuring that the system meets the needs and requirements of the user or client.
+
+> A **team leader** is a person who is responsible for leading and managing a team of individuals. They are responsible for setting goals and objectives for the team, as well as for providing guidance and support to team members. A team leader may also be responsible for coordinating the work of the team, monitoring progress, and providing feedback to team members.
+
+> A **professor** is an individual who teaches at a college or university. They typically have advanced degrees in their field of expertise and are responsible for designing and delivering courses, conducting research, and providing academic guidance to students.
+
+> An **entrepreneur** is a person who starts and runs their own business. They are responsible for identifying a business opportunity, developing a business plan, and managing the day-to-day operations of the business. An entrepreneur is typically focused on growing the business and generating profits, and they may also be involved in product development, marketing, and other aspects of the business.
+
+> These **four roles are all different and may be held by different individuals**. A software architect is focused on the technical design and implementation of a software system, a team leader is focused on managing and coordinating the work of a team, a professor is focused on teaching and research in a particular field of study, and an entrepreneur is focused on starting and running a business.
+
+
+#### Contact 
+
+- **professor: ** [professor](mailto:albertprofe@gmail.com)
+- **professional: ** [professinal](mailto:ayarza@inspiratgames.com)
+
+#### Linkedin
+  
+[https://www.linkedin.com/in/albert-yarza-demur/](https://www.linkedin.com/in/albert-yarza-demur/) 

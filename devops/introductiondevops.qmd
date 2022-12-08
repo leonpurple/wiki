@@ -1,0 +1,34 @@
+---
+title: "Introduction"
+---
+
+## Overview
+::: {.summary}
+📘 **DevOps**
+
+DevOps is “a cross-disciplinary community of practice dedicated to the study of building, evolving and operating rapidly-changing resilient systems at scale.”
+:::
+
+## What DevOps Isn't
+Given that DevOps is a philosophy... a management approach... and the combination of multiple IT disciplines... it might be easier to quickly look at some of what it isn't.
+
+- **DevOps is not Agile.** That said, your teams might indeed use Agile as a development methodology within an overall DevOps-style approach. Agile is certainly DevOps-compatible, and, like DevOps, values short, continual improvement.
+
+- **DevOps is not Continuous Integration.** That said, CI is often a part of DevOps-style behavior. The two can be really closely related, in fact - so closely that it's hard to tell the difference. I suppose you could argue that it's difficult to practice the DevOps philosophy without using CI as an enabling implementation, but you can definitely have CI without behaving like a DevOps organization, so the two aren't exactly the same thing.
+
+- **DevOps isn't "the developers running Operations.**" If anything, it's Operations automating things to the point where Operations runs itself in response to authorized actions taken by other roles, including developers.
+
+- **DevOps isn't a software development methodology**. See the first bullet, above. DevOps is what happens while software development is happening, and largely what happens when software development (or a cycle of it), is done. You still need to manage your software development - you just need to use a methodology that's DevOps-compatible.
+
+- **DevOps is not automation**. However, you can't have DevOps without automation. Automation is perhaps the biggest thing that Operations brings to the DevOps table, in fact.
+
+> Further, it actually seems to be an unstated goal of many DevOps champions to avoid the creation of any kind of trademarked, rigid, rulebook of "how to do DevOps," as ITIL or TQM or something. This book certainly doesn't attempt to provide "rules;" the goal here is to provide some understanding of what DevOps' broad goals are.
+
+[DevOps by DevOps Training](https://tkssharma-devops.gitbook.io/devops-training/#what-devops-isnt/)
+
+## What Is DevOps? (2)
+DevOps is a new term emerging from the collision of two major related trends. The first was also called “agile infrastructure” or “agile operations”; it sprang from applying Agile and Lean approaches to operations work.  The second is a much expanded understanding of the value of collaboration between development and operations staff throughout all stages of the development lifecycle when creating and operating a service, and how important operations has become in our increasingly service-oriented world (cf. Operations: The New Secret Sauce).
+
+> One definition Jez Humble proposed to me is that DevOps is “a cross-disciplinary community of practice dedicated to the study of building, evolving and operating rapidly-changing resilient systems at scale.”
+
+[What Is DevOps by the agile admin](https://theagileadmin.com/what-is-devops/)

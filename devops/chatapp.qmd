@@ -1,0 +1,15 @@
+---
+title: "Lab 1: chat App"
+---
+
+About this site: to-do
+
+https://sites.google.com/view/devopscifo/labs/1-chat-app
+
+https://sites.google.com/view/devopscifo/labs/1-chat-app/aws-chat-back
+https://sites.google.com/view/devopscifo/labs/1-chat-app/aws-chat-back/api-gateway-chat
+https://sites.google.com/view/devopscifo/labs/1-chat-app/aws-chat-back/dynamodb
+
+https://sites.google.com/view/devopscifo/labs/1-chat-app/react-chat-front
+https://sites.google.com/view/devopscifo/labs/1-chat-app/react-chat-front/react-chat-heroku
+https://sites.google.com/view/devopscifo/labs/1-chat-app/react-chat-front/react-chat-amplify

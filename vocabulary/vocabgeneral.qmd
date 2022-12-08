@@ -1,0 +1,6 @@
+---
+title: "General Vocabulary"
+---
+
+devops - framework - api - immuateble code - git - github - serverless - cd/ci - pipeline - container - docker image - docker container - microservices - ddd - script/declarative configuration file - throttle - parse - polling - webhook
+

@@ -1,0 +1,15 @@
+---
+title: "SCRUM"
+---
+
+## Introduction
+
+:::{.summary}
+📘 **SCRUM definition**
+
+Scrum is a framework for project management that is based on teamwork, accountability, transparency and short time-boxed **iterative** progress toward a **well-defined goal**.
+
+The framework begins with a simple premise: **start with what can be seen or known**. After that, track the progress and **adapt**, whenever it is necessary.
+
+At the end of each iteration, the team holds two meetings: one **review* to show the work done for clients and to get feedback, and one **retrospective** to enable the team to reflect and improve.
+:::

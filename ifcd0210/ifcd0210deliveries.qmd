@@ -1,0 +1,25 @@
+---
+title: "IFCD Deliveries"
+---
+
+
+Always in Quarto-Markdown format and code in GitHub repositories or Organitzations.
+
+Deliveries via github:
+
+
+| Code | Date | Description|
+|---|---|---|---|
+| **MF01-0491**  | **12/12/2022**  | **Front-end** |
+| UF01-1841 | 13/01/2023  | Prototip App POO i aplicant git/SCRUM/test |
+| UF02-1842 | 10/02/2023  | Laboratori React amb components i hooks useReducer (Spring Boot server és opcional)  |
+| UF03-1843 | 20/02/2023  | Laboratori React styling and performance, responsive flex (opcional Thymeleaf a Spring Boot)  |
+| MF01-0492 | 21/02/2023  | Prova objectiva i prova pràctica |
+| **MF02-0492**  | **21/02/2022**  | **Back-end** |
+| UF01-1844 | 20/03/2023  | Laboratori app MVC amb Spring Boot Rest conectat a React-client |
+| UF02-1845 | 19/04/2023  | Laboratori app Spring Boot Rest (opcional websocket) amb H2 JPA conectat a React-client  |
+| UF03-1846 | 09/05/2023  | Crear app web que comuniquiMÉS de 2 apps (2 Spring Boot i un React)  |
+| MF02-0492 | 10/05/2023  | Prova objectiva i prova pràctica |
+| **MF03-0493**  | **10/05/2022**  | **Project** |
+| UF01 | 08/06/2023  | Crear app web CRUD amb db en servidor remot Spring Boot i gestió de dades amb API fetch (opcional altres tech) JS React |
+| MF03-0493 | 10/05/2023  | Prova objectiva i prova pràctica |

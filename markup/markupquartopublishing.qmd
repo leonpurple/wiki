@@ -1,0 +1,94 @@
+---
+title: "Quarto Markdown: publishing"
+---
+
+
+## Overview
+[GitHub Pages](https://pages.github.com/) is a website hosting service that enables you to [publish content based on source code](https://quarto.org/docs/publishing/github-pages.html#ignoring-output) managed within a **GitHub repository**.
+
+Use the `quarto publish` **command** to <mark>publish content rendered</mark> on your local machine.
+
+`quarto publish` will make several operations with [GitHub Pages](https://pages.github.com/):
+
+- provision,
+- create pipeline,
+- create branch with HTML source
+- parse .qmd to .html
+- render (or build)
+- deploy,
+- hosting,
+- publish
+
+![gh-pages build and deployment #17: example of Actions triggered by Quarto publish](/images/markup/gh-pages_build.png){#gh-pages-build}
+
+
+The most important for us will be to make a branch `gh-pages` the first time **where the output HTML will be deployed** with  `quarto publish gh-pages`.
+
+::: {.callout-note collapse="true" icon=false}
+## (0) Files On Repository
+
+Your need to create a repository on GitHub with the Quarto pages .qmd pushed there.
+
+:::
+
+
+::: {.callout-tip collapse="true" icon=false}
+## (1) Activate GitHub Pages service
+You can modify these options in Settings : Pages for your repository. 
+
+:::
+
+::: {.callout-tip collapse="true" icon=false}
+## (2) Define Ignoring Output
+It’s important to note that you don’t need to check your _site or _book directory into version control (if you have done this in the past you know it makes for very messy diffs!). Before proceeding you should add the output directory of your project to .gitignore. For example:
+
+```bash
+## .gitignore
+
+/.quarto/
+/_site/
+```
+If you’ve already checked these files into source control you may need to remove them explicitly:
+
+```bash
+## Terminal
+
+git rm -r _site
+```
+
+:::
+
+::: {.callout-tip collapse="true" icon=false}
+## (3) Publish on branch gh-pages
+Once you have configured the source branch and updated your .gitignore, navigate to the directory where your project / git repository is located, make sure you are not on the gh-pages branch, and execute the quarto publish command for GitHub Pages:
+
+
+```bash
+## Terminal
+
+quarto publish gh-pages
+```
+
+The publish command will confirm that you want to publish, render your content, copy the output to a special gh-pages branch, push that branch to GitHub, and then open a browser to view your site once it is deployed.
+
+After this first time it will be no necessary to call gh-pages brach, once it has been defined as default:
+
+```bash
+##Terminal
+
+quarto publish 
+```
+:::
+
+::: {.callout-tip collapse="true" icon=false}
+## (4) Website published
+Your Quarto website will be published by GitHub pages on:
+
+<p class="indent">`userName.github.io\repositoryName`</p>
+
+:::
+
+
+
+
+
