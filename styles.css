@@ -33,7 +33,6 @@ img {
     border-radius: 10px 10px 10px 10px;
 }
 
-
 /* tab styling  method 1*/
 .tab-content {
     padding: 10px;
@@ -64,17 +63,17 @@ img {
     display: block;
 }
 
+/* labs card*/
 .labs {
     padding: 16px 16px 16px 16px;
-        background: #102641;
-        border: #ffffff6b;
-        color: #9ea0b8;
-        border-radius: 10px 10px 10px 10px;
-      
+    background: #5555FF;
+    border: #1407446b;
+    color: #ebedf1;
+    border-radius: 10px 10px 10px 10px;   
 }
 
-/* tab styling  method 2*/
 
+/* tab styling  method 2*/
 .tabs {
     display: flex;
     flex-wrap: wrap;
@@ -83,7 +82,6 @@ img {
 .tabs__label {
     padding: 10px 16px;
     font-size: 1.1em;
-   
 }
 
 .tabs__radio {
@@ -96,10 +94,11 @@ img {
     line-height: 1.5;
     font-size: 0.9em;
     display: none;
+    color: #ebedf1;
 }
 
 .tabs__radio:checked+.tabs__label {
-    color:#1E90FF;
+    color: rgb(13, 173, 247);
 }
 
 .tabs__radio:checked+.tabs__label+.tabs__content {

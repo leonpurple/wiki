@@ -9,54 +9,65 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 ---
 
 <div class="labs">
-<h5>Lab 1: Maven/Gradle Person and Account tested by JUnit</h5>
-</hr>
+<h5>📘 Lab 1: Maven/Gradle Person and Account tested by JUnit</h5>
+<hr style="height:2px;border-width:0;color:white;background-color:white">
 <div class="tabs">
   <input type="radio" class="tabs__radio" name="tabs-example" id="before" checked>
   <label for="before" class="tabs__label">Before</label>
   <div class="tabs__content">
 
-> In order to complete this project, you will need to have a **basic understanding of the Java programming language**, as well as some familiarity with **Maven or Gradle for managing dependencies** and building the project. 
->
-> Additionally, you will need to have some knowledge of algorithms and data structures to implement the required classes.
+  <p class="indent">In order to complete this project, you will need to have a **basic understanding of the Java programming language**, as well as some familiarity with **Maven or Gradle for managing dependencies** and building the project.
+  <br><br>
+  Additionally, you will need to have some knowledge of algorithms and data structures to implement the required classes.
+  </p>
   </div>
+  
   <input type="radio" class="tabs__radio" name="tabs-example" id="goal">
   <label for="goal" class="tabs__label">Goal</label>
   <div class="tabs__content">
 
-> The goal of this project is to **create three classes in Java** that implement different algorithms or data structures, and to test them using JUnit.
->
-> These classes could include, for example, creating new objects, a data structure for storing and manipulating data, or a utility class for performing common operations.
+  <p class="indent">The goal of this project is to **create three classes in Java** that implement different algorithms or data structures, and to test them using JUnit.
+  </br></br>
+  These classes could include, for example, creating new objects, a data structure for storing and manipulating data, or a utility class for performing common operations.
+  </p>
   </div>
-    <input type="radio" class="tabs__radio" name="tabs-example" id="tasks">
+  
+  <input type="radio" class="tabs__radio" name="tabs-example" id="tasks">
   <label for="tasks" class="tabs__label">Tasks</label>
   <div class="tabs__content">
 
->The tasks involved in this project include:
->
-> 1. Creating a **new Maven or Gradle project** and setting up the project structure.
-> 2. Modifying the project's `pom.xml` or `build.gradle` file to import the necessary dependencies, including **JUnit** for testing.
-> 3. Implementing the three required classes in Java, using appropriate algorithms and data structures.
-> 4. Writing **JUnit tests** to verify that the classes work as expected.
+  <p class="indent">The tasks involved in this project include:
+  </br>
+  <ol type="1" class="indent">
+  <li>Creating a **new Maven or Gradle project** and setting up the project structure.</li>
+  <li>Modifying the project's `pom.xml` or `build.gradle` file to import the necessary dependencies, including **JUnit** for testing.</li>
+  <li>Implementing the three required classes in Java, using appropriate algorithms and data structures.</li>
+  <li>Writing **JUnit tests** to verify that the classes work as expected.</li>
+  </ol>
+  <p class="indent">You may attach the **JUnit Test HTML** results to documentation.</p>
+  </p>
   </div>
-    <input type="radio" class="tabs__radio" name="tabs-example" id="after">
+  
+  <input type="radio" class="tabs__radio" name="tabs-example" id="after">
   <label for="after" class="tabs__label">After</label>
   <div class="tabs__content">
 
-> As an optional task, you could also consider **allowing the user to input data via the console**, rather than using `hard-coded test data` in your JUnit tests.
->
-> This would allow you to test the classes with a variety of different input data, and to <mark>interact</mark> with the classes in a more dynamic way.
+  <p class="indent">As an optional task, you could also consider **allowing the user to input data via the console**, rather than using `hard-coded test data` in your JUnit tests.
+  </br></br>
+  This would allow you to test the classes with a variety of different input data, and to <mark>interact</mark> with the classes in a more dynamic way.</p>
   </div>
-<input type="radio" class="tabs__radio" name="tabs-example" id="optional">
+
+  <input type="radio" class="tabs__radio" name="tabs-example" id="optional">
   <label for="optional" class="tabs__label">Optional</label>
   <div class="tabs__content">
 
->Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.
->
-> By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future.
+  <p class="indent">Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.
+  </br></br>
+  By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future.</p>
   </div>
+
 </div>
-<div>
+</div>
 
 ## Step-by-step
 
