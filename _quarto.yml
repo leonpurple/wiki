@@ -142,11 +142,14 @@ website:
       contents: 
         - text: "Java Standard Edition"
         - text: "---"  
-        - section: "Java Principles"
+        - section: "What is Java SE"
           contents: 
             - javase/sebasics.qmd
             - javase/seprinciples.qmd
             - javase/javasemoochelsinki.qmd
+        - text: "---"  
+        - section: "Java Principles"
+          contents: 
             - javase/sestaticandobjects.qmd
             - javase/seencapsulation.qmd
             - javase/seabstraction.qmd

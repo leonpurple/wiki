@@ -71,7 +71,7 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 
 ## Classes and Singleton
 
-Here, the `Person` class represents a **person with a name, address and others. The `AccountManager` class contains `static` methods to perform `withdrawal`, `transfer`, and `change pin` operations on a `Person` and `Account` object.
+Here, the `Person` class represents a **person** with a name, address and others. In the same way, `Account` class is a **bank account**. The `AccountManager` class contains `static` methods to perform `withdrawal`, `transfer`, and `change pin` operations on a `Person` and `Account` object.
 
 ```java
 public class Person {

@@ -6,13 +6,11 @@ title: "About images credit"
 
 - OOP principles: [www.nerd.vision](https://www.nerd.vision/post/polymorphism-encapsulation-data-abstraction-and-inheritance-in-object-oriented-programming)[^1]
 - Java Programming Tutorial Object-oriented Programming (OOP) Basics: [www3.ntu.edu.sg](https://www3.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html)[^2]
+- Singleton Design Pattern: [Singleton Design Pattern](https://springhow.com/singleton-pattern/)[^1]
 
-
-
-[^1]: random web
-[^2]: very useful and recommended resoruce
-
-
+[^1]: random web, *just crediting the image*
+[^2]: very useful and **recommended resource**
+[^3]: interesting web
 
 [How to write notes with .qmd Quarto Markdown](https://quarto.org/docs/authoring/footnotes-and-citations.html#footnotes)
 

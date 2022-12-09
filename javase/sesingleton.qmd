@@ -2,4 +2,18 @@
 title: "Java Desing-patterns: Singleton"
 ---
 
-About this site
+## Definition
+
+::: {.summary}
+The singleton pattern is a design pattern in computer programming and Java that is used to **restrict the instantiation of a class to one "single" instance**.
+:::
+
+---
+
+This is useful when you want to make sure that only one object of a particular class is created, because this can be helpful for managing resources and ensuring that your program is running as efficiently as possible.
+
+In Java, the singleton pattern can be implemented by creating a **private constructor for the class**, which prevents other objects from creating instances of the class.
+
+The class also typically provides a **static method that allows other classes to access the single** instance of the class, which is created the first time the static method is called. This ensures that only one instance of the class is created, and that all other classes can access this instance easily.
+
+![Singleton Pattern](../images/javase/singleton-pattern-edited.png)
