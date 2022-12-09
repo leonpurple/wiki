@@ -5,6 +5,7 @@ title: "Java SE Design-Patterns"
 ## Overview
 
 ::: {.summary}
+
 In Java, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern is not a finished design that can be transformed directly into code, but rather it is a description or template that can be used to solve a problem that is commonly encountered in software development.
 :::
 ---

@@ -27,7 +27,7 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
   <label for="goal" class="tabs__label">Goal</label>
   <div class="tabs__content">
 
-  <p class="indent">The goal of this project is to **create three classes in Java** that implement different algorithms or data structures, and to test them using JUnit.
+  <p class="indent">The goal of this project is to **create three classes in Java** (`Person`, `Account` and `Manager`) that implement different algorithms or data structures, and to test them using JUnit.
   </br></br>
   These classes could include, for example, creating new objects, a data structure for storing and manipulating data, or a utility class for performing common operations.
   </p>
@@ -69,7 +69,9 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 </div>
 </div>
 
-## Classes and Singleton
+## Solving discussion
+
+### Base Classes
 
 Here, the `Person` class represents a **person** with a name, address and others. In the same way, `Account` class is a **bank account**. The `AccountManager` class contains `static` methods to perform `withdrawal`, `transfer`, and `change pin` operations on a `Person` and `Account` object.
 
@@ -138,6 +140,82 @@ public class AccountManager {
     }
 }
 ```
+
+### Person has Account
+
+```java
+public class Person {
+  private String name;
+  private String surname;
+  private int age;
+  private Account account;
+
+  public Person(String name, String surname, int age, Account account) {
+    this.name = name;
+    this.surname = surname;
+    this.age = age;
+    this.account = account;
+  }
+
+  public Account getAccount() {
+    return this.account;
+  }
+
+  public void setAccount(Account account) {
+    this.account = account;
+  }
+   // Getters and setters for Account properties...
+}
+
+```
+
+<div class="mermaidContent">
+
+```{mermaid}
+classDiagram
+
+class Person {
+  -name: String
+  -surname: String
+  -age: int
+  -account: Account
+}
+
+class Account {
+  -accountNumber: String
+  -pin: int
+  -balance: double
+}
+
+Person *-- Account
+
+```
+
+</div>
+
+<div class="mermaidContent">
+
+```{mermaid}
+sequenceDiagram
+
+participant AccountManager as AccountManager
+participant Account as Account
+participant Person as Person
+
+AccountManager->>Person: transfer(amount, sender, receiver)
+Person->>Account: updateBalance(-amount, sender)
+Person->>Account: updateBalance(-amount, receiver)
+Account-->>Person: transferDone(receipt)
+Person-->>AccountManager: transferDone(receipt)
+```
+
+</div>
+
+<script>
+  mermaid.initialize({ sequence: { showSequenceNumbers: true } });
+</script>
+
+### Singleton
 
 To use the Singleton design pattern with a Person and Account class, you could create a **singleton** `AccountManager class` that manages the creation and operations of the `Person` and `Account` **objects**.
 

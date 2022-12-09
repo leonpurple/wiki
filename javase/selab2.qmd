@@ -1,5 +1,104 @@
 ---
-title: "Lab 2: subject"
+title: "Lab 2:  Maven/Gradle Person and Account stored in JSON "
 ---
 
 About this site
+
+<div class="labs">
+<h5>💻 Lab 1: Maven/Gradle Person and Account stored in JSON </h5>
+<hr>
+<!-- Tab links -->
+<div class="tabw3">
+  <button class="tablinks" onclick="openLab(event, 'Before')">Before</button>
+  <button class="tablinks" onclick="openLab(event, 'Goal')">Goal</button>
+  <button class="tablinks" onclick="openLab(event, 'Tasks')">Tasks</button>
+  <button class="tablinks" onclick="openLab(event, 'Optional')">Optional</button>
+  <button class="tablinks" onclick="openLab(event, 'After')">After</button>
+</div>
+
+<!-- Tab content -->
+<div id="Before" class="tabcontentw3">
+  <h3>Before</h3>
+  <p class="indent">
+  Students will need to have a **basic understanding of web development**, including HTML, CSS, and JavaScript..
+  </br></br></p>
+</div>
+
+<div id="Goal" class="tabcontentw3">
+  <h3>Goal</h3>
+  <p class="indent">
+  In this project, students will be required to create a **web application using basically Markdown, flavour Quarto**, and if it is necessary HTML, and CSS**.
+  </br></br>
+Additionally, they will need to use**GitHub and Visual Code** to manage their project's code and collaborate with their peers.
+  </br></p>
+</div>
+
+<div id="Tasks" class="tabcontentw3">
+  <h3>Tasks</h3>
+   <p class="indent">
+  The tasks involved in this project include:
+  </br>
+  <ol type="1" class="indent">
+  <li>
+  In the first part of the project, students will create a **basic web page using markdown and publish it on Github repository** using Visual Code. This will involve creating a new repository on Github and learning how to use markdown to format text and create links.</li>
+  <li>
+  In the second part of the project, students will learn how to **publish their website on gh-pages**, a service provided by Github for hosting static websites. This will involve learning how to use the gh-pages service and how to deploy their website to the internet.</li>
+  </ol>
+  <p class="indent">You should check your website on **user/github.io/repo**.</p>
+  </p>
+</div>
+
+<div id="Optional" class="tabcontentw3">
+  <h3>Optional</h3>
+  <p class="indent">As an optional study, students may also want to learn about using **callouts in their markdown documentation**. The following links provide useful information on the topic:
+  </br>
+    <ol type="1" class="indent">
+    <li><mark>
+    [markdown-callouts](https://oprypin.github.io/markdown-callouts/)
+    </mark></li>
+    <li><mark>
+    [Callout Blocks Quarto](https://quarto.org/docs/authoring/callouts.html)
+    </mark></li>
+    <li><mark>
+    [Getting Started with RDMD](https://rdmd.readme.io/docs/getting-started)
+    </mark></li>
+    <li><mark>
+    [Divs and spans](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans)
+    </mark></li>
+    <li><mark>
+    [codepen.io HTML+CSS](https://codepen.io/dongmikim/pen/VwLqyjQ)
+    </mark></li>
+    </ol>
+  <p class="indent">
+  Using **callouts, links, tabs and CSS** can help to improve the readability and organization of a markdown document, making it easier for readers to understand and navigate the content.
+  </br> </br>
+  To take their project to the next level, students may also choose to connect to an **API** (Application Programming Interface) to **retrieve data and render charts using JavaScript**. This will require an understanding of how to make HTTP requests and how to manipulate data in JavaScript.
+  </p>
+  <p class="indent"><mark>
+  [Quarto data sources](/markup/markupquartoprogramming.qmd)
+  </mark></p>
+</div>
+
+<div id="After" class="tabcontentw3">
+  <h3>After</h3>
+   <p class="indent">The Quarto website project is a great opportunity for students to develop their skills in **web development, markdown, and version control using GitHub and Visual Code**.
+  </br></br></p>
+</div>
+
+</div>
+
+<script>
+function openLab(evt, labStep) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontentw3");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(labStep).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>

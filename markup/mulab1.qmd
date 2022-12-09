@@ -23,7 +23,7 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
   <input type="radio" class="tabs__radio" name="tabs-example" id="goal">
   <label for="goal" class="tabs__label">Goal</label>
   <div class="tabs__content">
-  <p class="indent">In this project, students will be required to create a **web application using basically Markdown, flavour Quarto**, and if it is necessary HTML, and CSS**.
+  <p class="indent">In this project, students will be required to create a **web application using basically Markdown, flavour Quarto**, and when it is necessary HTML, JS and CSS**.
   </br></br>Additionally, they will need to use **GitHub and Visual Code** to manage their project's code and collaborate with their peers.
   </br></p>
   </div>
@@ -54,6 +54,7 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
     <li><mark>[Getting Started with RDMD](https://rdmd.readme.io/docs/getting-started)</mark></li>
     <li><mark>[Divs and spans](https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans)</mark></li>
     <li><mark>[codepen.io HTML+CSS](https://codepen.io/dongmikim/pen/VwLqyjQ)</mark></li>
+     <li><mark>[How TO - Tabs W3.CSS HTML+CSS+JS](https://www.w3schools.com/howto/howto_js_tabs.asp)</mark></li>
     </ol>
   <p class="indent">Using **callouts, links, tabs and CSS** can help to improve the readability and organization of a markdown document, making it easier for readers to understand and navigate the content. </br> </br>
   To take their project to the next level, students may also choose to connect to an **API** (Application Programming Interface) to **retrieve data and render charts using JavaScript**. This will require an understanding of how to make HTTP requests and how to manipulate data in JavaScript.</p>

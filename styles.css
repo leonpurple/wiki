@@ -1,5 +1,6 @@
 /* css styles */
 /* @import "w3.css" */
+@import "stylesTabs.css";
 hr {
     height: 2px;
     border-width: 0;
@@ -47,68 +48,4 @@ img {
     border: #1407446b;
     color: #ebedf1;
     border-radius: 10px 10px 10px 10px;
-}
-
-/* tab styling  method 1*/
-.tab-content {
-    padding: 10px;
-    border: none
-}
-
-.tab-nav {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;  
-}
-
-.tab-link {
-    display: flex;
-    align-items: left;
-    width: 60px;
-    height: 10px;
-    margin-right: -1px;
-    padding-right: 5px;
-    padding-left: 15px;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.tab-content:not(:target) {
-    display: none;
-}
-
-.tab-content:target {
-    display: block;
-}
-
-/* tab styling  method 2*/
-.tabs {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.tabs__label {
-    padding: 10px 16px;
-    font-size: 1.1em;
-}
-
-.tabs__radio {
-    display: none;
-}
-
-.tabs__content {
-    order: 1;
-    width: 100%;
-    line-height: 1.5;
-    font-size: 0.9em;
-    display: none;
-    color: #ebedf1;
-}
-
-.tabs__radio:checked+.tabs__label {
-    color: rgb(13, 173, 247);
-}
-
-.tabs__radio:checked+.tabs__label+.tabs__content {
-    display: initial;
 }
