@@ -1,5 +1,5 @@
 ---
-title: "Java Desing-patterns: Observer"
+title: "Java Design-patterns: Observer"
 ---
 
 About this site

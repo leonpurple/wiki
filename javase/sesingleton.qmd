@@ -1,5 +1,5 @@
 ---
-title: "Java Desing-patterns: Singleton"
+title: "Java Design-patterns: Singleton"
 ---
 
 ## Definition

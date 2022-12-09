@@ -11,3 +11,15 @@ title: "Java SE Resources"
 - [Object-Oriented Programming with Java, part I Week 5](https://materiaalit.github.io/2013-oo-programming/part1/week-5/)
 - [Object-Oriented Programming with Java, part I Week 6](https://materiaalit.github.io/2013-oo-programming/part1/week-6/)
 :::
+
+## Books
+
+- [Design Patterns: Elements of Reusable Object-Oriented Software
+Erich Gamma; Richard Helm; Ralph Johnson; John Vlissides](https://www.academia.edu/43687858/Design_Patterns_Elements_of_Reusable_Object_Oriented_Software_by_Erich_Gamma_Richard_Helm_Ralph_Johnson_John_Vlissides)
+
+
+## Web
+
+- Java Programming Tutorial Object-oriented Programming (OOP) Basics: [www3.ntu.edu.sg](https://www3.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html)
+
+## Youtube

@@ -2,4 +2,24 @@
 title: "Java SE Design-Patterns"
 ---
 
-About this site
+## Overview
+
+::: {.summary}
+In Java, a design pattern is a general repeatable solution to a commonly occurring problem in software design. A design pattern is not a finished design that can be transformed directly into code, but rather it is a description or template that can be used to solve a problem that is commonly encountered in software development.
+:::
+---
+
+There are many different design patterns that have been identified and documented, and each pattern provides a different solution to a specific problem.
+
+Some of the most important design patterns in Java include:
+
+- the factory pattern,
+- the observer pattern,
+- the singleton pattern,
+- and the builder pattern.
+
+These patterns are commonly used in Java because they provide solutions to common problems that are encountered in software development, and they can help to make your code more efficient, reusable, and maintainable.
+
+## Design Patterns Cheat-sheet
+
+![Design Patterns Cheat-sheet](../images/javase/design-patterns.png)

@@ -1,5 +1,5 @@
 ---
-title: "Java Desing-patterns: Builder"
+title: "Java Design-patterns: Builder"
 ---
 
 About this site

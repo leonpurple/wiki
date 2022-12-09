@@ -1,5 +1,5 @@
 ---
-title: "Java Desing-patterns: Factory"
+title: "Java Design-patterns: Factory"
 ---
 
 About this site
