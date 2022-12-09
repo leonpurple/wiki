@@ -1,5 +1,13 @@
 ---
 title: "Java SE Resources"
 ---
+## Object-Oriented Programming with Java, part I
 
-About this site: to-do
+::: {.callout}
+- [Object-Oriented Programming with Java, part I Week 1](https://materiaalit.github.io/2013-oo-programming/part1/week-1/)
+- [Object-Oriented Programming with Java, part I Week 2](https://materiaalit.github.io/2013-oo-programming/part1/week-2/)
+- [Object-Oriented Programming with Java, part I Week 3](https://materiaalit.github.io/2013-oo-programming/part1/week-3/)
+- [Object-Oriented Programming with Java, part I Week 4](https://materiaalit.github.io/2013-oo-programming/part1/week-4/)
+- [Object-Oriented Programming with Java, part I Week 5](https://materiaalit.github.io/2013-oo-programming/part1/week-5/)
+- [Object-Oriented Programming with Java, part I Week 6](https://materiaalit.github.io/2013-oo-programming/part1/week-6/)
+:::

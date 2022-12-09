@@ -1,5 +1,11 @@
 /* css styles */
 /* @import "w3.css" */
+hr {
+    height: 2px;
+    border-width: 0;
+    color: white;
+    background-color: white
+}
 
 .indent {
     margin-left: 40px;
@@ -13,6 +19,7 @@ img {
     padding: 2px 16px;
 }
 
+/* mermaid content */
 .mermaidContent {
     display: -webkit-flexbox;
     display: -ms-flexbox;
@@ -25,11 +32,20 @@ img {
     justify-content: center;
 }
 
+/* summary card */
 .summary{
     padding: 16px 16px 16px 16px;
     background: #a2f868;
     border: #ffffff6b;
     color: #117441;
+    border-radius: 10px 10px 10px 10px;
+}
+/* labs card*/
+.labs {
+    padding: 16px 16px 16px 16px;
+    background: #5555FF;
+    border: #1407446b;
+    color: #ebedf1;
     border-radius: 10px 10px 10px 10px;
 }
 
@@ -41,6 +57,8 @@ img {
 
 .tab-nav {
     display: flex;
+    flex-wrap: wrap;
+    list-style: none;  
 }
 
 .tab-link {
@@ -62,16 +80,6 @@ img {
 .tab-content:target {
     display: block;
 }
-
-/* labs card*/
-.labs {
-    padding: 16px 16px 16px 16px;
-    background: #5555FF;
-    border: #1407446b;
-    color: #ebedf1;
-    border-radius: 10px 10px 10px 10px;   
-}
-
 
 /* tab styling  method 2*/
 .tabs {

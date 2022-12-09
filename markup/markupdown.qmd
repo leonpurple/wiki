@@ -52,3 +52,11 @@ To summarize, this is a four-part process:
 
 From your perspective, the process will vary somewhat depending on the application you use. For example, Dillinger essentially combines steps 1-3 into a single, seamless interface — all you have to do is type in the left pane and the rendered output magically appears in the right pane. But if you use other tools, like a text editor with a static website generator, you’ll find that the process is much more visible.
 
+## Markdown Flavours
+
+- [Markdown](https://daringfireball.net/projects/markdown/syntax): The original Markdown syntax, developed by John Gruber.
+- [CommonMark](https://commonmark.org/): A standardized and highly-specified variant of Markdown, intended to be more predictable and consistent across implementations.
+- [GitHub Flavored Markdown](<https://github.github.com/gfm/>): An extension of Markdown with additional features and syntax, used by GitHub for rendering Markdown in its platform.
+- [GitLab Flavored Markdown](<https://docs.gitlab.com/ee/user/markdown.html>): An extension of Markdown with additional features and syntax, used by GitLab for rendering Markdown in its platform.
+- [Readme](https://docs.readme.com/rdmd/docs): A Markdown-based documentation format with support for features such as table of contents and automatic linking, used by many open-source projects.
+- [Obsidian](<https://www.markdownguide.org/tools/obsidian/>): A Markdown-based note-taking and organizing tool, with support for linking and organizing notes using graphs and diagrams.

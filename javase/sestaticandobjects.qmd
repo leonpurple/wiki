@@ -1,0 +1,6 @@
+---
+title: "Java SE: static and Objects"
+---
+
+about
+

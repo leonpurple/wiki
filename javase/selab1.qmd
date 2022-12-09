@@ -9,8 +9,9 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 ---
 
 <div class="labs">
-<h5>📘 Lab 1: Maven/Gradle Person and Account tested by JUnit</h5>
-<hr style="height:2px;border-width:0;color:white;background-color:white">
+<h5>💻 Lab 1: Maven/Gradle Person and Account tested by JUnit</h5>
+<hr>
+
 <div class="tabs">
   <input type="radio" class="tabs__radio" name="tabs-example" id="before" checked>
   <label for="before" class="tabs__label">Before</label>
@@ -42,25 +43,24 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
   <li>Creating a **new Maven or Gradle project** and setting up the project structure.</li>
   <li>Modifying the project's `pom.xml` or `build.gradle` file to import the necessary dependencies, including **JUnit** for testing.</li>
   <li>Implementing the three required classes in Java, using appropriate algorithms and data structures.</li>
+  <li>Implementing as well two basic pattern-designs: **singleton and think about factory**.</li>
   <li>Writing **JUnit tests** to verify that the classes work as expected.</li>
   </ol>
   <p class="indent">You may attach the **JUnit Test HTML** results to documentation.</p>
   </p>
   </div>
-  
-  <input type="radio" class="tabs__radio" name="tabs-example" id="after">
-  <label for="after" class="tabs__label">After</label>
-  <div class="tabs__content">
 
+  <input type="radio" class="tabs__radio" name="tabs-example" id="optional">
+  <label for="optional" class="tabs__label">Optional</label>
+  <div class="tabs__content">
   <p class="indent">As an optional task, you could also consider **allowing the user to input data via the console**, rather than using `hard-coded test data` in your JUnit tests.
   </br></br>
   This would allow you to test the classes with a variety of different input data, and to <mark>interact</mark> with the classes in a more dynamic way.</p>
   </div>
 
-  <input type="radio" class="tabs__radio" name="tabs-example" id="optional">
-  <label for="optional" class="tabs__label">Optional</label>
+  <input type="radio" class="tabs__radio" name="tabs-example" id="after">
+  <label for="after" class="tabs__label">After</label>
   <div class="tabs__content">
-
   <p class="indent">Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.
   </br></br>
   By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future.</p>
@@ -69,7 +69,137 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 </div>
 </div>
 
+## Classes and Singleton
+
+Here, the `Person` class represents a **person with a name, address and others. The `AccountManager` class contains `static` methods to perform `withdrawal`, `transfer`, and `change pin` operations on a `Person` and `Account` object.
+
+```java
+public class Person {
+  private String name;
+  private String address;
+  // Other properties for a Person...
+
+  public Person(String name, String address) {
+    this.name = name;
+    this.address = address;
+  }
+
+  // Getters and setters for Person properties...
+}
+```
+
+---
+
+```java
+
+public class Account {
+  private String accountNumber;
+  private String pin;
+  private double balance;
+  // Other properties for an Account...
+
+  public Account(String accountNumber, String pin, double balance) {
+    this.accountNumber = accountNumber;
+    this.pin = pin;
+    this.balance = balance;
+  }
+
+  // Getters and setters for Account properties...
+}
+```
+
+---
+
+```java
+public class AccountManager {
+    public static boolean withdrawal(Person person, double amount) {
+        if (amount > 0 && amount <= person.getBalance()) {
+            person.setBalance(person.getBalance() - amount);
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean transfer(Person sender, Person receiver, double amount) {
+        if (amount > 0 && amount <= sender.getBalance()) {
+            sender.setBalance(sender.getBalance() - amount);
+            receiver.setBalance(receiver.getBalance() + amount);
+            return true;
+        }
+        return false;
+    }
+
+    public static boolean changePin(Person person, String oldPin, String newPin) {
+        if (person.getPin().equals(oldPin)) {
+            person.setPin(newPin);
+            return true;
+        }
+        return false;
+    }
+}
+```
+
+To use the Singleton design pattern with a Person and Account class, you could create a **singleton** `AccountManager class` that manages the creation and operations of the `Person` and `Account` **objects**.
+
+The `AccountManager class` would have a `private constructor`, to **prevent multiple instances from being created**, and a `static getInstance` method that returns the singleton instance of the class.
+
+The `AccountManager class` would then have methods for performing various operations on the `Person` and `Account` objects, such as transferring money between accounts, withdrawing money from an account, or changing the PIN for an account.
+
+These methods would be implemented using the `Person` and `Account` classes, and would be accessible to other classes through the singleton `AccountManager` instance.
+
+For example, you could define the AccountManager, Person, and Account classes as follows:
+
+```java
+public class AccountManager {
+  private static AccountManager instance;
+  private Person person;
+  private Account account;
+
+  private AccountManager() {
+    // Private constructor to prevent multiple instances
+  }
+
+  public static AccountManager getInstance() {
+    if (instance == null) {
+      instance = new AccountManager();
+    }
+    return instance;
+  }
+
+  public void transfer(Account from, Account to, double amount) {
+    // Transfer money from one account to another
+  }
+
+  public void withdraw(Account account, double amount) {
+    // Withdraw money from an account
+  }
+
+  public void changePin(Account account, String newPin) {
+    // Change the PIN for an account
+  }
+
+  // Other methods for managing Person and Account objects...
+}
+```
+
+To use the `AccountManager` class, other classes would simply need to call the `getInstance` method to obtain the singleton instance of the class, and then use the instance's methods to perform operations on the `Person` and `Account` objects. For example:
+
+```java
+// Create a new Person and Account
+AccountManager manager = AccountManager.getInstance();
+manager.person = new Person("John Doe", "123 Main St.");
+manager.person = new Person("Carla Jameson", "323 Main St.");
+manager.person = new Person("Rafael Martin", "3 Glorious St.");
+manager.person = new Person("Pau Vila", "63 Sesamo St.");
+```
+
 ## Step-by-step
 
-
-
+1. Create Maven Project with JUnit
+2. Create Person class
+3. Create Account class
+4. Test Person and Account objects
+5. Write operations (withdrawal, transfer, change pin) as a static methods in AccountManager
+6. Test Person and Account objects and operations
+7. Add singleton pattern to AccountManager class
+8. Test AccountManager class

@@ -3,6 +3,7 @@ title: "Java MOOC Helsinki"
 ---
 
 ## About the course
+
 ![Java MOOC Programming University of Helsinki](/images/javase/moochelsinki.png){.image-preview}
 
 Welcome to the University of Helsinki’s free [massive open online course (MOOC) on programming](https://java-programming.mooc.fi/)! This is an updated version of our popular course **Object-Oriented Programming with Java.**
@@ -10,6 +11,7 @@ Welcome to the University of Helsinki’s free [massive open online course (MOOC
 During this course, you will learn the basics of computer programming, along with algorithms and object-oriented programming through the Java programming language. The course includes comprehensive materials and plenty of programming exercises - all of which are tested using our automatic testing service Test My Code.
 
 ## Target
+
 **Anyone can join - no previous programming knowledge is required.**
 
 Unlike many programming courses found online, ours is completely unabridged; the course’s scope and material are identical to our CS1 Introduction to Programming and Advanced Programming courses.
@@ -19,6 +21,7 @@ This is the first course in our computer science learning track, and we use indu
 The course does not require separate registration. You can simply dive into the first part of the course found over here.
 
 ## Course Contents
+
 The course is split up into two individual courses:
 
 - Java Programming I

@@ -97,6 +97,7 @@ website:
             - markup/markupintro.qmd
             - markup/markuphtml.qmd
             - markup/markupdown.qmd
+            - markup/markuphtmlrelation.qmd
         - text: "---"  
         - section: "Quarto Markdown"
           contents: 
@@ -146,6 +147,7 @@ website:
             - javase/sebasics.qmd
             - javase/seprinciples.qmd
             - javase/javasemoochelsinki.qmd
+            - javase/sestaticandobjects.qmd
             - javase/seencapsulation.qmd
             - javase/seabstraction.qmd
             - javase/seinheritance.qmd
