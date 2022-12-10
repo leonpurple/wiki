@@ -166,8 +166,8 @@ website:
         - text: "---"  
         - section: "Java SE Laboratories"
           contents: 
-            - javase/selab1.qmd
-            - javase/selab2.qmd
+            - javase/selab1-1.qmd
+            - javase/selab1-2.qmd
             - javase/selab3.qmd
             - javase/selab4.qmd
             - javase/selab5.qmd

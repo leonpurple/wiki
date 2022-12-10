@@ -1,5 +1,5 @@
 ---
-title: "Lab 1: Create and publish by Quarto"
+title: "Lab#MD01-1: Create and publish by Quarto"
 ---
 
 ## Overview
@@ -8,7 +8,7 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
 
 <!-- card labs with five tabs: before, goal, tasks, after, optional -->
 <div class="labs">
-<h5>💻 Lab 1: Publishing website by Quarto engine</h5>
+<h5>💻 Lab#MD01-1: Publishing website by Quarto engine</h5>
 <hr><div class="tabs">
 
 <!-- tab: before -->

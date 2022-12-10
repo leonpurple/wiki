@@ -79,7 +79,7 @@
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-    color: whitesmoke
+    color: #2c3a57;
 }
 
 /* Change background color of buttons on hover */
@@ -89,7 +89,7 @@
 
 /* Create an active/current tablink class */
 .tabw3 button.active {
-    color: #2c3a57;
+    color: whitesmoke;
 }
 
 /* Style the tab content */

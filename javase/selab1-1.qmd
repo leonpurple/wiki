@@ -1,5 +1,5 @@
 ---
-title: "Lab 1: Maven/Gradle Person and Account"
+title: "Lab#SE01-1: Maven/Gradle Person and Account"
 ---
 
 ## Overview
@@ -9,7 +9,7 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 ---
 
 <div class="labs">
-<h5>💻 Lab 1: Maven/Gradle Person and Account tested by JUnit</h5>
+<h5>💻 Lab#SE01-1: Maven/Gradle Person and Account tested by JUnit</h5>
 <hr>
 
 <div class="tabs">
@@ -63,7 +63,7 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
   <div class="tabs__content">
   <p class="indent">Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.
   </br></br>
-  By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future.</p>
+  By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future. You may go to Lab 2 (<mark>[go Lab#SE01-2](/javase/selab1-2.qmd)</mark>)</p>
   </div>
 
 </div>
@@ -168,6 +168,7 @@ public class Person {
 }
 
 ```
+#### UML Class Diagram
 
 <div class="mermaidContent">
 
@@ -192,6 +193,8 @@ Person *-- Account
 ```
 
 </div>
+
+#### UML Sequence Diagram
 
 <div class="mermaidContent">
 

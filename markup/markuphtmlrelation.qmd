@@ -14,17 +14,19 @@ Instead, it is often better to use one language **exclusively**, and to use the 
 
 ## Problems
 
-- **Danger**: If the HTML and Markdown are not properly formatted or nested, the resulting document may not be readable or display correctly. This can lead to confusion for readers and make the document difficult to understand.
+- **Display**: If the HTML and Markdown are not properly formatted or nested, the resulting document may not be readable or display correctly. This can lead to confusion for readers and make the document difficult to understand.
 
-- **Perils**: Mixing HTML and Markdown can make it difficult to maintain the document, as changes to one language may affect the other. This can result in errors and inconsistencies, and make it more challenging to update the document over time.
+- **Maintain**: Mixing HTML and Markdown can make it difficult to maintain the document, as changes to one language may affect the other. This can result in errors and inconsistencies, and make it more challenging to update the document over time.
 
 - **Incompatibilities**: Different Markdown parsers and HTML renderers may have different interpretations of the mixed language, leading to differences in how the document is displayed or interpreted. This can cause confusion for readers and make it difficult to ensure that the document is consistently displayed across different platforms.
 
-## Example 1
+## Example: creating navigation TABs
+
+### Approach #1: MD + CSS
 
 ::: {.callout-note icon=false  collapse="false"}
 
-## Lab 1: Publishing website by Quarto engine
+## Lab#01-1: Publishing website by Quarto engine
 
 ::: {.tab-nav}
 [Before](#before){.tab-link}
@@ -147,9 +149,13 @@ Instead, it is often better to use one language **exclusively**, and to use the 
 :::
 
 :::
+
+::: {.callout-warning icon=false  collapse="true"}
+
+## Markdown callouts with calls to CSS classes
 
 ```md
-::: {.callout-note icon=false  collapse="false"}
+::: {.callout-info icon=false  collapse="false"}
 ## Lab 1: Publishing website by Quarto engine
 
 ::: {.tab-nav}
@@ -263,4 +269,62 @@ Instead, it is often better to use one language **exclusively**, and to use the 
 :::
 
 :::
+```
+
+:::
+
+### Approach #2: HTML + CSS
+
+[Lab statement on Lab#01-1: Create and publish by Quarto](/markup/mulab1.qmd)
+
+### Approach #3: HTML + CSS + JS
+
+From ``w3.css``: [W3.CSS Navigation Tabs](https://www.w3schools.com/w3css/w3css_tabulators.asp)
+
+[Lab statement on Lab#02-2: Maven/Gradle Person and Account stored in JSON](/javase/selab1-2.qmd)
+
+```js
+<script>
+function openLab(evt, labStep) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontentw3");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(labStep).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+```
+
+### Approach #4: if it is able to import MDReadme
+
+[Code Blocks](https://docs.readme.com/rdmd/docs/code-blocks)
+
+**Syntax**
+
+We offer both classic single code blocks, as well as a tabbed interface for displaying multiple code blocks concisely! These are written nearly identically to a series of vanilla markdown code snippets, except for their distinct lack of an additional line break separating each subsequent block:
+
+```js
+javascript I'm A tab
+console.log('Code Tab A');
+
+javascript I'm tab B
+console.log('Code Tab B');
+
+```
+
+**Custom CSS**
+
+```css
+.markdown-body {
+  --md-code-background: #e3dcef;
+  --md-code-text: #4a2b7b;
+  --md-code-tabs: #c6b8dd;
+  --md-code-radius: 4px;
+}
 ```
