@@ -5,11 +5,17 @@ title: "Java SE: Abstraction"
 ## Overview
 
 ::: {.summary}
+
+📘 **Abstraction**
+
 **Abstraction** is the process of focusing on the essential characteristics of an object, while ignoring the non-essential details.
+
+
 :::
+
 ---
 
-In other words, abstraction means <mark>representing the essential features of an object without including the non-essential details<mark>. In Java, abstraction is achieved through the use of abstract classes and interfaces.
+In other words, abstraction means <mark>representing the essential features of an object without including the non-essential details</mark>. In Java, abstraction is achieved through the use of abstract classes and interfaces.
 
 Here is an example of abstraction in Java:
 
@@ -38,9 +44,14 @@ In this example, the `Account` class is an abstract class because it contains an
 
 This makes it possible to manage large and complex code bases **without becoming overwhelmed by the details**.
 
-::: {.summary}
+::: {.callout-note}
+
+📘 **How abstraction is done**
+
 In Java, abstraction is achieved through the use of ``abstract`` classes and ``interfaces``.
+
 :::
+
 ---
 
 An ``abstract`` class is a class that contains one or more ``abstract`` methods. An ``abstract`` method is a method that is **declared but not implemented**. This means that subclasses of the abstract class must implement the abstract methods in order to use them.

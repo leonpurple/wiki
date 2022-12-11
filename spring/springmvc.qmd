@@ -2,7 +2,7 @@
 title: "Spring MVC"
 ---
 
-# Overview
+## Overview
 
 ![Spring MVC](/images/springmvc/mvc.png){.image-preview #spring-mvc-diagram}
 

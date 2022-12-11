@@ -4,7 +4,7 @@ title: "Java SE: Scope"
 
 ## Overview
 
-In Java, **the scope of a variable refers to the parts of the program where the variable is accessible**. A variable has a <mark>certain scope based on where it is declared<mark>, and the scope of a variable determines where in the program the variable can be used and accessed.
+In Java, **the scope of a variable refers to the parts of the program where the variable is accessible**. A variable has a <mark>certain scope based on where it is declared</mark>, and the scope of a variable determines where in the program the variable can be used and accessed.
 
 There are *three main types of scope* in Java:
 

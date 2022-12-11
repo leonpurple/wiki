@@ -5,7 +5,13 @@ title: "Java SE: Inherence"
 ## Overview
 
 ::: {.summary}
-**Inheritance** is a fundamental concept in object-oriented programming. It is the process of **creating new classes from existing classes**. In other words, it is the process of deriving new classes from existing classes, which allows developers to reuse and extend the functionality of existing classes.
+
+📘 **Inheritance**
+
+**Inheritance** is a fundamental concept in object-oriented programming. It is the process of **creating new classes from existing classes**.
+
+In other words, it is the process of deriving new classes from existing classes, which allows developers to reuse and extend the functionality of existing classes.
+
 :::
 ---
 

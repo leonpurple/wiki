@@ -3,12 +3,11 @@ title: "Java Standard Edition: Basics"
 ---
 
 ## Introduction
+
 ::: {.summary #java-definition}
 📘 **Java SE**
 
 Java is a high-level, class-based, object-oriented and  general-purpose programming language and computing platform intended to let programmers **write once, run anywhere (WORA)**. The type system is static, strong and safe.
-
-
 
 It is [widely used](https://www.tiobe.com/tiobe-index/) for developing applications for web, mobile, and desktop environments. Java is known for its reliability and security, making it a perfect choice for developing enterprise-level applications, that is JEE (Java Enterprise Edition).
 :::

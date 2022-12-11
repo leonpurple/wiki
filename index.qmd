@@ -16,6 +16,7 @@ title: "Home"
 - DevOps
 - SCRUM
 :::
+
 ---
 
 This wiki is focused in Web App development and the skills set needed. Nowadays a developer (not a coder) must have this skills set:

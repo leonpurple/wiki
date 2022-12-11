@@ -1,5 +1,0 @@
----
-title: "Java SE Patterns: Abstract Factory"
----
-
-About this site

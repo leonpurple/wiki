@@ -16,7 +16,7 @@ In Java, the singleton pattern can be implemented by creating a **private constr
 
 The class also typically provides a **static method that allows other classes to access the single** instance of the class, which is created the first time the static method is called. This ensures that only one instance of the class is created, and that all other classes can access this instance easily.
 
-![Singleton Pattern](../images/javase/singleton-pattern-edited.png)
+![Singleton Pattern](../images/javase/singleton-pattern-edited.png){width=60%}
 
 ## Example: ``Logger``
 

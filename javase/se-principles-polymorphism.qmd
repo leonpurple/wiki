@@ -5,8 +5,15 @@ title: "Java SE: Polymorphism"
 ## Overview
 
 ::: {.summary}
-**Polymorphism** is a fundamental concept in object-oriented programming. It is the ability of an object to take on different forms. In other words, it is the ability of a single object **to behave differently in different contexts**.
+
+📘 **Polymorphism**
+
+**Polymorphism** is a fundamental concept in object-oriented programming. It is the ability of an object to take on different forms.
+
+In other words, it is the ability of a single object **to behave differently in different contexts**.
+
 :::
+
 ---
 
 ``Polymorphism`` is an important concept in object-oriented programming because it allows developers to write code that is more flexible and reusable. By using ``polymorphism``, developers can write code that can operate on objects of different types, without knowing the specific type of the object in advance.
@@ -41,5 +48,3 @@ When the `makeNoise()` method is called on the `dog` object, it executes the imp
 ## Conclusion
 
 Overall, this example shows how polymorphism allows objects of different types to share a common set of methods, and to execute different implementations of those methods based on their specific type. This allows the code to be more flexible and reusable, because it can operate on objects of different types without knowing their specific type in advance.
-
-

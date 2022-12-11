@@ -24,7 +24,7 @@ website:
       - text: Markup & Style
         file: markup/markupintro.qmd     
       - text: Java SE
-        file: javase/sebasics.qmd 
+        file: javase/se-what-basics.qmd 
       - text: Spring
         file: spring/spring.qmd
       - text: React JS
@@ -145,32 +145,33 @@ website:
         - text: "---"  
         - section: "What is Java SE"
           contents: 
-            - javase/sebasics.qmd
-            - javase/seprinciples.qmd
-            - javase/javasemoochelsinki.qmd
+            - javase/se-what-basics.qmd
+            - javase/se-what-principles.qmd
+            - javase/se-what-moochelsinki.qmd
         - text: "---"
         - section: "Java Concepts"
           contents:
-            - javase/seobjects.qmd
-            - javase/sescope.qmd
-            - javase/sestatic.qmd
-            - javase/secoupling.qmd
+            - javase/se-concepts-objects.qmd
+            - javase/se-concepts-scope.qmd
+            - javase/se-concepts-static.qmd
+            - javase/se-concepts-coupling.qmd
+            - javase/se-concepts-package.qmd
         - text: "---"
         - section: "Java Principles"
           contents:
-            - javase/seencapsulation.qmd
-            - javase/seabstraction.qmd
-            - javase/seinheritance.qmd
-            - javase/sepolymorphism.qmd    
+            - javase/se-principles-encapsulation.qmd
+            - javase/se-principles-abstraction.qmd
+            - javase/se-principles-inheritance.qmd
+            - javase/se-principles-polymorphism.qmd    
         - text: "---"  
         - section: "Java Design Patterns"
           contents: 
-            - javase/sepatterns.qmd
-            - javase/sesingleton.qmd
-            - javase/sefactory.qmd
-            - javase/seabstractfactory.qmd
-            - javase/seobserver.qmd
-            - javase/sebuilder.qmd
+            - javase/se-pattern-intro.qmd
+            - javase/se-pattern-singleton.qmd
+            - javase/se-pattern-factory.qmd
+            - javase/se-pattern-abstractfactory.qmd
+            - javase/se-pattern-observer.qmd
+            - javase/se-pattern-builder.qmd
         - text: "---"  
         - section: "Java SE Laboratories"
           contents: 
@@ -188,13 +189,10 @@ website:
       contents:
         - text: "Spring"
         - text: "---"  
-        - section: "Spring"
+        - section: "Spring Legacy"
           contents: 
             - spring/spring.qmd
-        - text: "---"  
-        - section: "Spring MVC"
-          contents: 
-            - springmvc/springmvc.qmd
+            - spring/springmvc.qmd
         - text: "---"  
         - section: "Spring Boot"
           contents: 

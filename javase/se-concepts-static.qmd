@@ -5,8 +5,15 @@ title: "Java SE: static modifier"
 ## Overview
 
 ::: {.summary}
-In Java, the `static` modifier is used to indicate that a class or class member belongs to the class itself, rather than to an instance of the class. In other words, the `static` modifier indicates that the class or class member is associated with the class as a whole, rather than with a specific instance of the class.
+
+📘 **static modifier**
+
+In Java, the `static` modifier is used to indicate that a **class or class member belongs to the class itself, rather than to an instance of the class**.
+
+In other words, the `static` modifier indicates that the class or class member is associated with the class as a whole, rather than with a specific instance of the class.
+
 :::
+
 ---
 
 The `static` modifier has several different uses in Java, depending on where it is applied. Here are some examples of how the `static` modifier can be used in Java.

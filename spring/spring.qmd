@@ -4,6 +4,56 @@ title: "Spring"
 
 ## Overview
 
+::: {.summary}
+📘 **What is Spring Framework”?**
+
+**Spring Framework is a powerful lightweight application development framework** used for Enterprise Java (JEE).
+
+:::
+
+---
+
+The Spring Framework is a popular Java framework for building enterprise-level applications.
+
+The Spring Framework provides a comprehensive set of tools and libraries for building and maintaining enterprise applications, and is designed to support the <mark>"software development principles of modularity, component-based development, and non-invasive programming"</mark>.
+
+The Spring Framework consists of several modules, each of which provides a different set of functionality and tools. Some of the key modules of the Spring Framework include:
+
+- **Spring Core**: The core module provides the fundamental functionality of the Spring Framework, including dependency injection, inversion of control, and support for aspect-oriented programming.
+
+- **Spring MVC**: The MVC (Model-View-Controller) module provides a web-oriented framework for building web applications, and supports the development of web applications using a "front controller" pattern.
+
+- **Spring Data**: The Data module provides tools and libraries for working with data sources and databases, and supports the development of data-oriented applications.
+
+- **Spring Security**: The Security module provides tools and libraries for implementing authentication and authorization in applications, and supports the development of secure applications.
+
+- **Spring Boot**: The Boot module provides a way to quickly and easily create stand-alone, production-grade Spring applications. Spring Boot uses an "opinionated" approach to configuration, which means that it provides a set of default configurations that are designed to work well together, and allows developers to get started quickly without having to spend a lot of time configuring the application.
+
+Overall, the Spring Framework is a powerful and popular toolkit for building enterprise-level applications in Java, and provides a wide range of tools and libraries for supporting various aspects of application development. By using the Spring Framework, developers can take advantage of the framework's modular design, and can choose the specific modules that are most relevant to their needs and goals.
+
+## Timeline
+
+- The current stable version, as of December 2022, is **Spring 6.0.2**. You can always find new version announcements on <https://github.com/spring-projects/spring-framework/releases>.
+
+- The current stable version, as of December 2022, is Spring Boot 3.0.0. You can always find new version announcements on <https://github.com/spring-projects/spring-boot/releases>.
+
+- **Spring Boot 3.0.0** (and therefore the latest Spring Framework 6.0.2) supports Java 19 while also remaining compatible with Java 11 and 8.
+
+![Following is the timeline shown about major releases in the history of Spring](/images/springmvc/spring-history.png){width=100%}
+
+
+## Differences between the Spring Framework and Spring Boot
+
+- The Spring Framework is a comprehensive framework for building and maintaining enterprise-level applications in Java, while Spring Boot is focused specifically on simplifying the process of creating and deploying stand-alone, production-grade Spring applications.
+
+- The Spring Framework provides a flexible and modular approach to configuration, while Spring Boot uses an "opinionated" approach to configuration, which provides a set of default configurations that are designed to work well together.
+
+- The Spring Framework provides a web-oriented framework called Spring MVC, while Spring Boot provides a more integrated approach to web application development, and includes support for building web applications using a wide range of technologies.
+
+- In general, the Spring Framework and Spring Boot are both useful frameworks for building enterprise-level applications in Java, but have different scopes, focus, and approaches to configuration, and may be more or less suitable for different types of projects and goals.
+
+![ table summarizing the differences between the Spring Framework and Spring Boot](/images/springmvc/table-spring-boot.png)
+
 
 
 

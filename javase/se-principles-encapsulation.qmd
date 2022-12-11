@@ -5,10 +5,16 @@ title: "Java SE: Encapsulation"
 ## Overview
 
 ::: {.summary}
-**Encapsulation** is the process of wrapping data and methods that operate on that data into a single unit. In other words, it is the process of hiding the implementation details of an object from the outside world. In Java, encapsulation is achieved through the use of access modifiers like private, public, and protected.
-:::
----
 
+📘 **Encapsulation**
+
+**Encapsulation** is the process of wrapping data and methods that operate on that data into a single unit. In other words, it is the process of hiding the implementation details of an object from the outside world.
+
+In Java, **encapsulation** is achieved through the use of access modifiers like private, public, and protected.
+
+:::
+
+---
 
 Here is an example of encapsulation in Java:
 

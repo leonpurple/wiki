@@ -3,6 +3,9 @@ title: "Java SE: Coupling/Cohesion"
 ---
 
 ::: {.summary}
+
+📘 **Coupling/coherence**
+
 **Coupling** refers to the degree to which one class or module depends on another class or module.
 
 **High/tight coupling** means that one class or module depends heavily on another class or module, while **low/loose coupling** means that one class or module has minimal dependencies on other classes or modules.
@@ -18,7 +21,7 @@ Coupling and decoupling are fundamental in modern Java applied to **microservice
 
 The **importance of decoupling** in Java lies in its ability to improve the modularity, flexibility, and maintainability of a system. When classes or modules <mark>are highly coupled, changes to one class or module can have a cascading effect on other classes or modules, which can make the system difficult to modify and maintain<mark>. By decoupling classes or modules, you can **reduce** the dependencies between them, which can make the system more modular and easier to modify and maintain.
 
-![Coupling and cohesion by Евгений Мирошниченко, CC0, [via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:CouplingVsCohesion.svg)](https://upload.wikimedia.org/wikipedia/commons/0/09/CouplingVsCohesion.svg)
+![Coupling and cohesion by Евгений Мирошниченко, CC0, [via Wikimedia Commons](https://commons.wikimedia.org/wiki/File:CouplingVsCohesion.svg)](https://upload.wikimedia.org/wikipedia/commons/0/09/CouplingVsCohesion.svg){width=50%}
 
 Additionally, decoupling can help to improve the reusability of classes or modules. When classes or modules are <mark>highly coupled, it can be difficult to reuse them in other contexts or situations</mark>. By **decoupling** classes or modules, you can make them more self-contained and independent, which can make them more easily reusable in other contexts.
 

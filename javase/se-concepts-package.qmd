@@ -1,0 +1,44 @@
+---
+title: "Java SE: Packages"
+---
+
+## Overview
+
+::: {.summary}
+📘 **Design-patterns**
+
+In Java, a package is a **collection of related classes and interfaces that provide a higher-level abstraction for organizing and modularizing your code**.
+
+Packages allow you to group similar classes and interfaces together, and to provide a convenient namespace for accessing those classes and interfaces from other parts of your program.
+:::
+
+---
+
+
+When you create a new class or interface in Java, you can place it in a package by using the `package` keyword at the top of the file, followed by the name of the package. For example, the following code shows how to create a new class called `Example` and place it in the `com.example` package:
+
+``` java
+package com.example;
+
+public class Example {
+    // Class code goes here...
+}
+```
+
+By placing the `Example` class in the `com.example` package, you can access the class from other parts of your program by using the fully-qualified class name, which includes the package name as well as the class name. For example, the following code shows how to use the `Example` class from within another class called `Main`:
+
+``` java
+public class Main {
+    public static void main(String[] args) {
+        // Use fully-qualified class name to access Example class
+        com.example.Example example = new com.example.Example();
+    }
+}
+
+```
+
+In this example, the `Main` class uses the `com.example.Example` class by specifying the fully-qualified class name, which includes the package name as well as the class name. This allows the `Main` class to access the `Example` class from within the `com.example` package.
+
+## Conclusion
+
+Overall, packages are an important concept in Java, and can help to improve the modularity, organization, and maintainability of your code. By grouping related classes and interfaces together into packages, you can provide a convenient namespace for accessing those classes and interfaces, and you can better manage the dependencies between different parts of your program.

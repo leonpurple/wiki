@@ -5,7 +5,7 @@ title: "Java Standard Edition: Principles"
 
 ![Java SE Basic Principles OOP](/images/javase/javaseprinciples.png){.preview-image #java-oop}
 
-**Object-oriented programming (OOP)** is a programming paradigm that is based on the concept of `objects`, which can contain data and code that manipulates that data. OOP is based on several key principles, including the following:
+**Object-oriented programming (OOP)** is a programming paradigm that is based on the concepts of `objects` and `classes`, which can contain data and code that manipulates that data. OOP is based on several key principles, including the following:
 
 - **Encapsulation**: Encapsulation refers to the idea of combining data and the code that manipulates that data into a single unit, or object. This allows for better organization and modularity of code, and helps to hide the internal details of an object from other parts of the program.
 
@@ -15,17 +15,25 @@ title: "Java Standard Edition: Principles"
 
 - **Polymorphism**: Polymorphism is the ability of an object to take on multiple forms. In OOP, polymorphism allows for the use of a single interface to refer to objects of different types. This allows for greater flexibility and code reuse, as the same method can be used on objects of different types and the appropriate implementation will be called based on the type of the object.
 
-Overall, the principles of encapsulation, abstraction, inheritance, and polymorphism are fundamental to OOP and form the basis for many of its benefits, such as modularity, flexibility, code reuse, and ease of maintenance.
+Overall, the principles of **encapsulation, abstraction, inheritance, and polymorphism** are fundamental to OOP and form the basis for many of its benefits, such as modularity, flexibility, code reuse, and ease of maintenance.
 
 ### What is an object in Java OOP
 ![Example object in Java](/images/javase/OOP_Circle.png){.image-preview #java-class}
 
-In object-oriented programming (OOP), an object is a **self-contained unit that combines data and the code that manipulates that data**. 
+::: {.summary}
+
+📘 **Object-oriented programming (OOP)**
+
+In object-oriented programming (OOP), an object is a **self-contained unit that combines data and the code that manipulates that data**.
 
 An object is a data structure that contains:
 
 - **attributes**, or properties, <mark>that describe the object</mark>, defines the <mark>state's object</mark>
 - and **methods**, or functions, that define the <mark>behavior of the object</mark>.
+
+:::
+
+---
 
 Objects can <mark>interact</mark> with each other by sending and receiving messages, or method calls, to access and modify their data.
 
