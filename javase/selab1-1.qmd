@@ -11,32 +11,36 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
 <div class="labs">
 <h5>💻 Lab#SE01-1: Maven/Gradle Person and Account tested by JUnit</h5>
 <hr>
+<!-- Tab links -->
+<div class="tabw3">
+  <button class="tablinks" onclick="openLab(event, 'Context')">Context</button>
+  <button class="tablinks" onclick="openLab(event, 'Goal')">Goal</button>
+  <button class="tablinks" onclick="openLab(event, 'Tasks')">Tasks</button>
+  <button class="tablinks" onclick="openLab(event, 'Optional')">Optional</button>
+</div>
+<hr>
 
-<div class="tabs">
-  <input type="radio" class="tabs__radio" name="tabs-example" id="before" checked>
-  <label for="before" class="tabs__label">Before</label>
-  <div class="tabs__content">
+<!-- Tab content: CONTEXT -->
+<div id="Context" class="tabcontentw3">
+  <h3>Context</h3><p class="indent">
+  In order to complete this project, you will need to have a **basic understanding of the Java programming language**, as well as some familiarity with **Maven or Gradle for managing dependencies** and building the project.</p><p class="indent">
+  Additionally, you will need to have some knowledge of algorithms and data structures to implement the required classes.</p><p class="indent">
+  Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.</p><p class="indent">
+  By completing this project, you will have a starting foundation in these technologies and be able to build more complex and sophisticated Java applications in the future. You may go to Lab 2 (<mark>[go Lab#SE01-2](/javase/selab1-2.qmd)</mark>)</p>
+</div>
 
-  <p class="indent">In order to complete this project, you will need to have a **basic understanding of the Java programming language**, as well as some familiarity with **Maven or Gradle for managing dependencies** and building the project.
-  <br><br>
-  Additionally, you will need to have some knowledge of algorithms and data structures to implement the required classes.
-  </p>
-  </div>
-  
-  <input type="radio" class="tabs__radio" name="tabs-example" id="goal">
-  <label for="goal" class="tabs__label">Goal</label>
-  <div class="tabs__content">
-
+<!-- Tab content: GOAL -->
+<div id="Goal" class="tabcontentw3">
+  <h3>Goal</h3>
   <p class="indent">The goal of this project is to **create three classes in Java** (`Person`, `Account` and `Manager`) that implement different algorithms or data structures, and to test them using JUnit.
   </br></br>
   These classes could include, for example, creating new objects, a data structure for storing and manipulating data, or a utility class for performing common operations.
   </p>
-  </div>
-  
-  <input type="radio" class="tabs__radio" name="tabs-example" id="tasks">
-  <label for="tasks" class="tabs__label">Tasks</label>
-  <div class="tabs__content">
+</div>
 
+<!-- Tab content: TASKS -->
+<div id="Tasks" class="tabcontentw3">
+  <h3>Tasks</h3>
   <p class="indent">The tasks involved in this project include:
   </br>
   <ol type="1" class="indent">
@@ -47,27 +51,32 @@ Create a Maven/Gradle Java SE Project with three classes and Junit to test objec
   <li>Writing **JUnit tests** to verify that the classes work as expected.</li>
   </ol>
   <p class="indent">You may attach the **JUnit Test HTML** results to documentation.</p>
-  </p>
   </div>
 
-  <input type="radio" class="tabs__radio" name="tabs-example" id="optional">
-  <label for="optional" class="tabs__label">Optional</label>
-  <div class="tabs__content">
+<!-- Tab content: OPTIONAL -->
+<div id="Optional" class="tabcontentw3">
+  <h3>Optional</h3>
   <p class="indent">As an optional task, you could also consider **allowing the user to input data via the console**, rather than using `hard-coded test data` in your JUnit tests.
   </br></br>
   This would allow you to test the classes with a variety of different input data, and to <mark>interact</mark> with the classes in a more dynamic way.</p>
-  </div>
-
-  <input type="radio" class="tabs__radio" name="tabs-example" id="after">
-  <label for="after" class="tabs__label">After</label>
-  <div class="tabs__content">
-  <p class="indent">Overall, this project will provide an opportunity for you **to learn and apply the basics of Java programming**, as well as gain experience with Maven or Gradle, JUnit, and user input via the console.
-  </br></br>
-  By completing this project, you will have a staring foundation in these technologies and be able to build more complex and sophisticated Java applications in the future. You may go to Lab 2 (<mark>[go Lab#SE01-2](/javase/selab1-2.qmd)</mark>)</p>
-  </div>
-
 </div>
 </div>
+
+<script>
+function openLab(evt, labStep) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontentw3");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(labStep).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
 
 ## Solving discussion
 
@@ -276,11 +285,11 @@ manager.person = new Person("Pau Vila", "63 Sesamo St.");
 
 ## Step-by-step
 
-1. Create Maven Project with JUnit
-2. Create Person class
-3. Create Account class
-4. Test Person and Account objects
-5. Write operations (withdrawal, transfer, change pin) as a static methods in AccountManager
-6. Test Person and Account objects and operations
-7. Add singleton pattern to AccountManager class
-8. Test AccountManager class
+1. Create ``Maven`` Project with **JUnit**
+2. Create ``Person`` class
+3. Create ``Account`` class
+4. Test ``Person`` and Account objects
+5. Write operations (``withdrawal``, ``transfer``,`` change pin``) as a ``static`` methods in ``AccountManager``
+6. Test ``Person`` and ``Account`` objects and operations
+7. Add ``singleton`` pattern to ``AccountManager`` class
+8. Test ``AccountManager`` class

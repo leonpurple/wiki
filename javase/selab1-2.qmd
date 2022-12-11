@@ -2,7 +2,7 @@
 title: "Lab#SE01-2:  Maven/Gradle Person and Account stored in JSON "
 ---
 
-About this site
+Create a Maven/Gradle Java SE Project with three classes and Junit to test objects and operations. From here you should add new features: factory pattern, JSON parser and save this JSON on local storage.
 
 <div class="labs">
 <h5>💻 Lab#SE01-2: Maven/Gradle Person and Account stored in JSON </h5>
@@ -28,7 +28,8 @@ About this site
 <div id="Goal" class="tabcontentw3">
   <h3>Goal</h3><p class="indent">
   <p class="indent">The goal of this project is to **create three classes in Java** (`Person`, `Account` and `Manager`) that implement different algorithms or data structures, and to test them using JUnit. </p><p class="indent">
-  Now, it this version v2.0 you will storage the data on local JSON and use the `factory` pattern. For that, your will need to create the ``Account`` ``interface`` and two subclasses: ``SavingsAccount`` and ``CheckingAccount``.</p>
+  Now, it this version v2.0 you will storage the data on local JSON and use the `factory` pattern. For that, your will need to create the ``Account`` ``interface`` and two subclasses: ``SavingsAccount`` and ``CheckingAccount``. </p><p class="indent">
+  Use de `Lombok` dependency to write getters and setters.</p>
 </div>
 
 <!-- Tab content: TASKS -->
@@ -48,8 +49,7 @@ About this site
 <div id="Optional" class="tabcontentw3">
   <h3>Optional</h3><p class="indent">
   As an optional task, you could also consider **allowing the user to input data via the console**, rather than using `hard-coded test data` in your **JUnit tests**.   This would add dynamism and be able to **interact** with the classes.</p><p class="indent">
-  Add `Credit Card` class and create the **new feature** `buy Credit Cart` in `ÀccountManager`.</p><p class="indent">
-  Use de `Lombok` dependency to write getters and setters.</p>
+  Add `Credit Card` class and create the **new feature** `buy Credit Card` in `AccountManager`.</p><p class="indent"></p>
 </div>
 
 </div>

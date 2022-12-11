@@ -150,7 +150,7 @@ website:
         - text: "---"  
         - section: "Java Principles"
           contents: 
-            - javase/sestaticandobjects.qmd
+            - javase/sestatic.qmd
             - javase/seencapsulation.qmd
             - javase/seabstraction.qmd
             - javase/seinheritance.qmd

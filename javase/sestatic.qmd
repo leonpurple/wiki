@@ -1,0 +1,178 @@
+---
+title: "Java SE: static modifier"
+---
+
+## Overview
+
+::: {.summary}
+In Java, the `static` modifier is used to indicate that a class or class member belongs to the class itself, rather than to an instance of the class. In other words, the `static` modifier indicates that the class or class member is associated with the class as a whole, rather than with a specific instance of the class.
+:::
+---
+
+The `static` modifier has several different uses in Java, depending on where it is applied. Here are some examples of how the `static` modifier can be used in Java.
+
+## ``static`` field
+
+**When applied to a field**, the `static` modifier indicates that the field belongs to the class itself, rather than to an instance of the class. This means that all instances of the class share the same value for the `static` field.
+
+For example:
+
+``` java
+public class Counter {
+    // Static field
+    private static int count = 0;
+
+    // Constructor
+    public Counter() {
+        count++;
+    }
+
+    // Getter method for the count field
+    public static int getCount() {
+        return count;
+    }
+}
+
+```
+
+In this example, the `count` field is marked as `static`, which means that all instances of the `Counter` class share the same value for the `count` field. When a new instance of the `Counter` class is created, the `count` field is incremented, and the new value is shared by all instances of the class.
+
+Another example:
+
+``` java
+public class Account {
+    // Static field
+    private static int nextAccountNumber = 1;
+
+    // Private instance variables
+    private int accountNumber;
+    private String name;
+    private double balance;
+
+    // Constructor
+    public Account(String name, double balance) {
+        this.accountNumber = nextAccountNumber++;
+        this.name = name;
+        this.balance = balance;
+    }
+
+    // Getter method for the accountNumber field
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Getter method for the name field
+    public String getName() {
+        return name;
+    }
+
+    // Getter method for the balance field
+    public double getBalance() {
+        return balance;
+    }
+
+    // Method for depositing money into the account
+    public void deposit(double amount) {
+        balance += amount;
+    }
+
+    // Method for withdrawing money from the account
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+}
+```
+
+In this example, the `Account` class defines a `nextAccountNumber` field that is marked as `static`. This means that the `nextAccountNumber` field belongs to the `Account` class itself, rather than to an instance of the `Account` class. This means that all instances of the `Account` class share the same value for the `nextAccountNumber` field.
+
+When a new instance of the `Account` class is created, the `nextAccountNumber` field is incremented, and the new value is shared by all instances of the class. This allows each instance of the `Account` class to have a unique `accountNumber` field, which is generated automatically using the `nextAccountNumber` field.
+
+## ``static`` method
+
+**When applied to a method**, the `static` modifier indicates that the method belongs to the class itself, rather than to an instance of the class. This means that the `static` method can be called on the class itself, rather than on an instance of the class.
+
+For example:
+
+``` java
+public class MathUtils {
+    // Static method
+    public static double squareRoot(double number) {
+        return Math.sqrt(number);
+    }
+}
+```
+
+In this example, the `squareRoot()` method is marked as `static`, which means that it can be called on the `MathUtils` class itself, rather than on an instance of the `MathUtils` class. This allows the `squareRoot()` method to be called without creating an instance of the `MathUtils` class, which can be useful in some situations.
+
+## ``static`` class
+
+
+**When applied to a class**, the `static` modifier indicates that the class is a **nested class**. In other words, the `static` class is defined inside another class, and is associated with the outer class.
+
+Here is an example of how the static modifier can be used when applied to a class in Java, using an Account class and a nested Transaction class as examples:
+
+``` java
+public class Account {
+    // Static field
+    private static int nextAccountNumber = 1;
+
+    // Private instance variables
+    private int accountNumber;
+    private String name;
+    private double balance;
+
+    // Static nested class
+    public static class Transaction {
+        // Private instance variables
+        private int transactionNumber;
+        private double amount;
+        private String type;
+
+        // Constructor
+        public Transaction(double amount, String type) {
+            this.transactionNumber = nextAccountNumber++;
+            this.amount = amount;
+            this.type = type;
+        }
+
+        // Getter method for the transactionNumber field
+        public int getTransactionNumber() {
+            return transactionNumber;
+        }
+
+        // Getter method for the amount field
+        public double getAmount() {
+            return amount;
+        }
+
+        // Getter method for the type field
+        public String getType() {
+            return type;
+        }
+    }
+
+    // Constructor
+    public Account(String name, double balance) {
+        this.accountNumber = nextAccountNumber++;
+        this.name = name;
+        this.balance = balance;
+    }
+
+    // Getter method for the accountNumber field
+    public int getAccountNumber() {
+        return accountNumber;
+    }
+
+    // Getter method for the name field
+    public String getName() {
+        return name;
+    }
+
+    // Getter method for the balance field
+    public double getBalance() {
+        return balance;
+    }
+
+}
+
+```

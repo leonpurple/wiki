@@ -2,9 +2,25 @@
 /* @import "w3.css" */
 @import "stylesTabs.css";
 
-#x-btn-navbar {
-    color: #5d99d1;
+.main-small-navigation .menu {
+    background: none repeat scroll 0 0 rgb(73, 4, 4);
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
 }
+#masthead-wrap {
+    background-color: #020e11 !important;
+    height: 150px;
+    padding-top: 1px;
+}
+
+.menu-home-container {
+    margin-top: -15px;
+}
+
+
 
 hr {
     height: 2px;

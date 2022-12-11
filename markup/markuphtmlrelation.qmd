@@ -275,13 +275,13 @@ Instead, it is often better to use one language **exclusively**, and to use the 
 
 ### Approach #2: HTML + CSS
 
-[Lab statement on Lab#01-1: Create and publish by Quarto](/markup/mulab1.qmd)
+[Lab statement on Lab#MD01-1: Create and publish by Quarto](/markup/mulab1.qmd)
 
 ### Approach #3: HTML + CSS + JS
 
 From ``w3.css``: [W3.CSS Navigation Tabs](https://www.w3schools.com/w3css/w3css_tabulators.asp)
 
-[Lab statement on Lab#02-2: Maven/Gradle Person and Account stored in JSON](/javase/selab1-2.qmd)
+[Lab statement on Lab#SE01-2: Maven/Gradle Person and Account stored in JSON](/javase/selab1-2.qmd)
 
 ```js
 <script>
@@ -301,7 +301,7 @@ function openLab(evt, labStep) {
 </script>
 ```
 
-### Approach #4: if it is able to import MDReadme
+### Approach #4: import MDReadme?
 
 [Code Blocks](https://docs.readme.com/rdmd/docs/code-blocks)
 
@@ -328,3 +328,13 @@ console.log('Code Tab B');
   --md-code-radius: 4px;
 }
 ```
+
+::: {.callout-important}
+## How to import that feature **Navigate by Tabs** into **Quarto**?
+This could work but it has been NOT tested:
+
+- You could convert Readme Markdown to Quarto Markdown, using a tool like Markdown Converter (<https://markdown.pioul.fr/>), which supports both flavors of Markdown.
+- Or Markdowon Parser form  **Flexmark** Java library
+
+In any case, they are not **Extensions** within Quarto ... so, for now, there is NOT an easy and direct solution to do this conversion.
+:::

@@ -2,4 +2,39 @@
 title: "Java SE: Encapsulation"
 ---
 
-About this site
+## Overview
+
+::: {.summary}
+**Encapsulation** is the process of wrapping data and methods that operate on that data into a single unit. In other words, it is the process of hiding the implementation details of an object from the outside world. In Java, encapsulation is achieved through the use of access modifiers like private, public, and protected.
+:::
+---
+
+
+Here is an example of encapsulation in Java:
+
+``` java
+public class Account {
+    // Private instance variables
+    private double balance;
+
+    // Public methods
+    public void deposit(double amount) {
+        // Code for depositing money
+        balance += amount;
+    }
+
+    public void withdraw(double amount) {
+        // Code for withdrawing money
+        balance -= amount;
+    }
+
+    public void checkBalance() {
+        // Code for checking account balance
+        System.out.println("Current balance: " + balance);
+    }
+}
+
+
+```
+
+In this example, the `Account` class has private instance variables and public methods. The `balance` variable is private, which means that it can only be accessed within the `Account` class. The `deposit()`, `withdraw()`, and `checkBalance()` methods are public, which means that they can be called from outside the `Account` class. This ensures that the implementation details of the `Account` class are hidden from the outside world.
