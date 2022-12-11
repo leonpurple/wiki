@@ -42,6 +42,7 @@ website:
   sidebar:
     - title: "DevOps"
       border: true
+      collapse-level: 1
       background: none
       style: "floating"
       contents:
@@ -147,20 +148,27 @@ website:
             - javase/sebasics.qmd
             - javase/seprinciples.qmd
             - javase/javasemoochelsinki.qmd
-        - text: "---"  
-        - section: "Java Principles"
-          contents: 
+        - text: "---"
+        - section: "Java Concepts"
+          contents:
+            - javase/seobjects.qmd
+            - javase/sescope.qmd
             - javase/sestatic.qmd
+            - javase/secoupling.qmd
+        - text: "---"
+        - section: "Java Principles"
+          contents:
             - javase/seencapsulation.qmd
             - javase/seabstraction.qmd
             - javase/seinheritance.qmd
-            - javase/sepolymorphism.qmd
+            - javase/sepolymorphism.qmd    
         - text: "---"  
         - section: "Java Design Patterns"
           contents: 
             - javase/sepatterns.qmd
             - javase/sesingleton.qmd
             - javase/sefactory.qmd
+            - javase/seabstractfactory.qmd
             - javase/seobserver.qmd
             - javase/sebuilder.qmd
         - text: "---"  

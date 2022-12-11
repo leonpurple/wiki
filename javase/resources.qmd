@@ -21,5 +21,7 @@ Erich Gamma; Richard Helm; Ralph Johnson; John Vlissides](https://www.academia.e
 ## Web
 
 - Java Programming Tutorial Object-oriented Programming (OOP) Basics: [www3.ntu.edu.sg](https://www3.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html)
+- Java Oracle Official Documentation [The Java™ Tutorials](https://docs.oracle.com/javase/tutorial/java/index.html)
+- StackOverFlow [Is Java "pass-by-reference" or "pass-by-value"?](https://stackoverflow.com/questions/40480/is-java-pass-by-reference-or-pass-by-value){#IsJavaReference}
 
 ## Youtube
