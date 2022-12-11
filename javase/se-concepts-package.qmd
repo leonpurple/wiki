@@ -14,7 +14,6 @@ Packages allow you to group similar classes and interfaces together, and to prov
 
 ---
 
-
 When you create a new class or interface in Java, you can place it in a package by using the `package` keyword at the top of the file, followed by the name of the package. For example, the following code shows how to create a new class called `Example` and place it in the `com.example` package:
 
 ``` java
@@ -38,6 +37,24 @@ public class Main {
 ```
 
 In this example, the `Main` class uses the `com.example.Example` class by specifying the fully-qualified class name, which includes the package name as well as the class name. This allows the `Main` class to access the `Example` class from within the `com.example` package.
+
+
+## Package in Java SE or Java EE is not similiar
+
+::: {.callout-important}
+The package that a class is placed in can be an important factor in **how the framework resolves requests**. This is because the <mark>Spring Framework uses the package structure of a project to help determine the path of a request, and to map the request to the appropriate controller or handler</mark>.
+:::
+
+For example, consider a Spring MVC application that contains a `com.example.web` package, which contains a `HomeController` class that is used to handle requests to the application's home page. In this case, the `HomeController` class is placed in the `com.example.web` package, which means that the path of a request to the home page would include the package name as part of the URL.
+
+For instance, if the application's base URL is `http://localhost:8080`, then a request to the home page might have a URL like the following:
+
+``` bash
+http://localhost:8080/com.example.web/home
+
+```
+
+In this case, the `com.example.web` package is part of the path that resolves the request to the `HomeController` class, which is responsible for handling the request and generating a response.
 
 ## Conclusion
 
