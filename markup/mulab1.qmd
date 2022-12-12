@@ -89,6 +89,10 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
     2. [Improve your Quarto Project](/markup/markupquarto.qmd)
 5. Go to published web:`user/github.io/repo`
 
+## Screeshoosts (2022-12-12)
+
+[Log in to GitHub and Quarto Creation](https://drive.google.com/drive/folders/1fV85crifRwAvL63ERIRhPmIoTsbsEeTW?usp=share_link)
+
 ## Screenshoots (2022-12-08)
 
 :::{.callout-note  collapse="false" }
@@ -110,3 +114,142 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
 
 ![fig 3](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(3).png)
 :::
+:::{.callout-note  collapse="false" }
+## let s do a commit but .. first
+
+![fig 4](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(4).png)
+:::
+:::{.callout-note  collapse="false" }
+## we need to publish branch
+
+![fig 5](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(5).png)
+:::
+:::{.callout-note  collapse="false" }
+## Permission
+
+![fig 6](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(6).png)
+:::
+:::{.callout-note  collapse="false" }
+## Permission
+
+![fig 7](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(7).png)
+:::
+:::{.callout-note  collapse="false" }
+## publish in public repository: name
+
+![fig 8](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(8).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## repository name: wiki is better! :-)
+
+![fig 9](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(9).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## repository name: publishing
+
+![fig 10](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(10).png)
+:::
+:::{.callout-note  collapse="false" }
+## this tree folder is publising
+
+![fig 11](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(11).png)
+:::
+:::{.callout-note  collapse="false" }
+## tree folder in github
+
+![fig 12](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(12).png)
+:::
+:::{.callout-note  collapse="false" }
+## gh-pages activation
+
+![fig 13](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(13).png)
+:::
+:::{.callout-note  collapse="false" }
+## at first gh-pages branck doesn't exist: don't worry, quarto will create later
+
+![fig 14](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(14).png)
+:::
+:::{.callout-note  collapse="false" }
+## master is our branch: root
+
+![fig 15](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(15).png)
+:::
+:::{.callout-note  collapse="false" }
+## there is just one brach: master (brach gh-pages NOT YET)
+
+![fig 16](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(16).png)
+:::
+:::{.callout-note  collapse="false" }
+## render
+
+![fig 17](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(17).png)
+:::
+:::{.callout-note  collapse="false" }
+## quarto publish
+
+![fig 18](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(18).png)
+:::
+:::{.callout-note  collapse="false" }
+## yes
+
+![fig 19](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(19).png)
+:::
+:::{.callout-note  collapse="false" }
+## now: brach created
+
+![fig 20](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(20).png)
+:::
+:::{.callout-note  collapse="false" }
+## and ... gh pages now has got the gh-pages branch selected
+
+![fig 21](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(21).png)
+:::
+:::{.callout-note  collapse="false" }
+## we may check all is right: commit
+
+![fig 22](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(22).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## we may check all is right: deploy
+
+![fig 23](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(23).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## we may check all is right: actions
+
+
+![fig 24](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(24).png)
+:::
+:::{.callout-note  collapse="false" }
+## web deployed: live
+
+![fig 25](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(25).png)
+:::
+:::{.callout-note  collapse="false" }
+## log publising terminal 1/4
+
+![fig 26](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(26).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## log publising terminal 2/4
+
+![fig 27](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(27).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## log publising terminal 3/4
+
+![fig 28](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(28).png)
+:::
+:::{.callout-note  collapse="false" }
+
+## log publising terminal 4/4
+
+![fig 29](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(29).png)
+:::
+
