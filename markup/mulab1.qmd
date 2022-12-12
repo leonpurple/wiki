@@ -89,11 +89,11 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
     2. [Improve your Quarto Project](/markup/markupquarto.qmd)
 5. Go to published web:`user/github.io/repo`
 
-## Screeshoosts (2022-12-12)
+## Screen-shoots (2022-12-12)
 
 [Log in to GitHub and Quarto Creation](https://drive.google.com/drive/folders/1fV85crifRwAvL63ERIRhPmIoTsbsEeTW?usp=share_link)
 
-## Screenshoots (2022-12-08)
+## Screen-shoots (2022-12-08)
 
 :::{.callout-note  collapse="false" }
 
