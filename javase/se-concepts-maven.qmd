@@ -1,0 +1,30 @@
+---
+title: "Java SE: Maven"
+---
+
+::: {.summary}
+
+📘 **Dependency Management: Maven**
+
+**Apache Maven is a software project management** and comprehension tool. Based on the concept of a **project object model (POM)**, Maven can manage a project's build, reporting and documentation from a central piece of information.
+:::
+
+---
+
+Maven is a **build automation tool** used primarily for Java projects.
+
+[Maven](https://maven.apache.org/) can also be used to build and manage projects written in C#, Ruby, Scala, and other languages. The Maven project is hosted by the **Apache Software Foundation**, where it was formerly part of the Jakarta Project.
+
+Maven addresses two aspects of building software:
+- how software is built and
+- its dependencies
+
+## Maven Repository
+
+Link: [Maven Central Repository](https://mvnrepository.com/)
+
+<mark>Maven repository is a directory where all the dependencies such as jars, library files, plugins, or other artifacts that will be required by the projects are stored</mark>.
+
+These repositories help us to store and maintain useful resources so that they can be used in our maven projects while building and deploying the artifacts.
+
+All the layout and structure of the underlying repositories of maven of any type are **completely hidden for maven users**.

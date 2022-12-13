@@ -151,6 +151,7 @@ website:
         - text: "---"
         - section: "Java Concepts"
           contents:
+            - javase/se-concepts-maven.qmd
             - javase/se-concepts-objects.qmd
             - javase/se-concepts-scope.qmd
             - javase/se-concepts-static.qmd
