@@ -34,9 +34,7 @@ The following example provides a glimpse at the minimum requirements for writing
 
 ``` java
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import example.util.Calculator;
-
 import org.junit.jupiter.api.Test;
 
 class MyFirstJUnitJupiterTests {
@@ -49,9 +47,7 @@ class MyFirstJUnitJupiterTests {
     }
 
 }
-
 ```
-
 
 ## TDD
 
@@ -102,7 +98,14 @@ Finally, we would run the test again to ensure that it passes. If the test passe
 
 This is just one example of how TDD can be applied in a Java project using JUnit. There are many other ways to approach TDD, and the specific steps and details will vary depending on the project and the requirements.
 
+## Naming the test class
+We use common conventions in naming the test class. Let’s start with the name of the class which is being tested and assume the name of that class is `Student`. In that case, the name of the test class should be `StudentTest`. We have to append `Test` to it. The same naming convention is used in the case of methods. If there is a method `DisplayStudentAddress()`, then the name of the method in testing should be `testDisplayStudentAddress()`.
 
 
+
+| Naming in Production | Naming in Testing |
+| --- | --- | 
+| Student | StudentTest |
+| DisplayStudentAddress() | testDisplayStudentAddress() |
 
 
