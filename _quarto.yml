@@ -22,7 +22,9 @@ website:
       - text: SCRUM
         file: scrum/scrum.qmd
       - text: Markup & Style
-        file: markup/markupintro.qmd     
+        file: markup/markupintro.qmd
+      - text: Linux
+        file: linux/linux-what-basics.qmd       
       - text: Java SE
         file: javase/se-what-basics.qmd 
       - text: Spring
@@ -152,6 +154,7 @@ website:
         - section: "Java Concepts"
           contents:
             - javase/se-concepts-maven.qmd
+            - javase/se-concepts-tdd.qmd
             - javase/se-concepts-objects.qmd
             - javase/se-concepts-scope.qmd
             - javase/se-concepts-static.qmd

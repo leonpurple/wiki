@@ -1,0 +1,35 @@
+---
+title: "Linux: basic concepts"
+---
+
+::: {.summary}
+
+📘 **Linux**
+
+Linux is a **free and open-source operating system**. It is a **Unix-like operating system that is based on the Linux kernel**, an operating system kernel first released on September 17, 1991, by Linus Torvalds. Linux is commonly used in web servers, smartphones, and other devices where reliability, security, and performance are important.
+:::
+
+---
+
+
+## Basic commands
+
+Here are some basic terminal commands that can be used in Linux Mint:
+
+- `pwd`: Print the name of the current working directory (i.e., show the full path to the current directory)
+- `ls`: List the contents of the current directory
+- `cd`: Change the current working directory
+- `mkdir`: Create a new directory
+- `rmdir`: Remove an empty directory
+- `touch`: Create a new file or update the timestamp of an existing file
+- `cp`: Copy a file or directory
+- `mv`: Move or rename a file or directory
+- `rm`: Remove a file
+- `man`: Display the manual page for a command
+- `sudo`: Run a command with superuser privileges
+- `apt-get` is a command-line utility for managing packages in the Linux operating system. It is used to install, update, and remove packages from the system. apt-get is part of the Advanced Packaging Tool (APT) system, which is used to manage software packages in the Debian and Ubuntu Linux distributions.
+
+
+These are just a few examples of the many commands that are available in Linux. To learn more about a specific command, you can use the `man` command to view its manual page. 
+
+For example, to learn more about the `ls` command, you could type `man ls` in the terminal.

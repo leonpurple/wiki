@@ -28,3 +28,26 @@ Link: [Maven Central Repository](https://mvnrepository.com/)
 These repositories help us to store and maintain useful resources so that they can be used in our maven projects while building and deploying the artifacts.
 
 All the layout and structure of the underlying repositories of maven of any type are **completely hidden for maven users**.
+
+## Maven Lifecycle
+
+Maven is a **build automation tool for Java projects**. It is used to manage the build, reporting, and documentation of a project. Maven has a defined lifecycle that outlines the steps required to build and distribute a project.
+
+The **Maven lifecycle** has three main phases:
+
+- `clean`: This phase is used to clean up any previous build artifacts.
+- `default`: This is the main phase of the lifecycle, where the project is built, tested, and packaged.
+- `site`: This phase is used to generate the project's documentation and site information.
+
+Each phase of the Maven lifecycle consists of a set of build phases, which are executed in a specific order. For example, the default phase consists of the following build phases:
+
+- `validate`: Validate the project's configuration and dependencies.
+- `compile`: Compile the project's source code.
+- `test`: Run the project's tests.
+- `package`: Package the compiled code into a distributable format (e.g., a JAR file).
+- `install`: Install the packaged code into the local repository.
+- `deploy`: Deploy the packaged code to a remote repository for others to use.
+
+Each build phase consists of a set of build goals, which are the specific tasks that are executed to accomplish the phase's objectives. For example, the compile phase has a build goal called compiler:compile that is responsible for compiling the project's source code.
+
+By following the defined Maven lifecycle, developers can easily build, test, and distribute their Java projects in a consistent and repeatable manner.
