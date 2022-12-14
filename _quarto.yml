@@ -129,7 +129,7 @@ website:
           contents: 
             - markup/resources.qmd
             
-    - id: scrum
+    - id: "scrum"
       title: "SCRUM"
       contents: 
         - text: "SCRUM"
@@ -259,7 +259,6 @@ website:
 
     
     - id: "ifcd0210"
-    - text: SCRUM
       title: "IFCD0210"
       contents: 
         - text: "IFCD0210"
