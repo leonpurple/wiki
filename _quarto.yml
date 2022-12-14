@@ -19,12 +19,12 @@ website:
     right:
       - text: Home
         file: index.qmd
-      - sidebar:scrum
-      - sidebar:markup
       - sidebar:linux
+      - sidebar:markup
       - sidebar:javase
       - sidebar:spring   
       - sidebar:reactjs
+      - sidebar:scrum
       - sidebar:devops
       - sidebar:vocabulary
       - sidebar:ifcd
