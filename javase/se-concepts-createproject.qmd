@@ -45,7 +45,7 @@ To specify the version of Maven to use, you can edit the pom.xml file and add a 
 ```
 This will use **version 3.6.3 of Maven** for the project.
 
-## Step-by-step screenshots (2022-1214)
+## Step-by-step screenshots (2022-12-14)
 
-[Screenshoots Create Maven Project](https://drive.google.com/drive/folders/1V9tQJT08yUVzBWZJKXP3xzTk6tdBUanh?usp=sharing)
+[Screen-shoots Create Maven Project](https://drive.google.com/drive/folders/1V9tQJT08yUVzBWZJKXP3xzTk6tdBUanh?usp=sharing)
 
