@@ -58,6 +58,7 @@ website:
           contents: 
             - devops/visualcode.qmd
             - devops/intelljidea.qmd
+            - devops/netbeans.qmd
         - text: "---"           
         - section: "DevOps tools"
           contents:

@@ -1,5 +1,5 @@
 ---
-title: "Visual Code"
+title: "Visual Studio Code"
 ---
-
-to-do
+// TODO IMAGEN DEL LOGO
+[Visual Studio Code ](https://code.visualstudio.com/)
