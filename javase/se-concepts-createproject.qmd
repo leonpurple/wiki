@@ -1,0 +1,49 @@
+---
+title: "Java SE: Create Maven Project"
+---
+## Create Maven Project
+
+To create a Maven project with a **standard directory structure using IntelliJ IDEA**, you can follow these steps:
+
+1. Install the Maven plugin in **IntelliJ IDEA**.
+2. Open IntelliJ IDEA and navigate to the `Plugins` settings.
+3. Search for `Maven` and install the plugin.
+4. In IntelliJ IDEA, click `Create New Project`.
+5. In the `New Project` dialog, select `Maven` from the list of project types.
+6. Click `Next` and select the `**maven-archetype-quickstart` archetype**. This archetype creates a <mark>standard Maven project with a directory structure for source code and unit tests.<mark>
+7. Click `Next` and enter the `groupId` and `artifactId` for your project. These are used to identify your project uniquely across all projects.
+8. Click `Finish` to create the project.
+
+
+Your project will be created with the following directory structure:
+
+``` js
+
+my-project
+├── pom.xml
+└── src
+    ├── main
+    │   └── java
+    └── test
+        └── java
+``` 
+
+The `src/main/java` directory is where you should put your Java source code, and the `src/test/java` directory is where you should put your **unit tests**.
+
+To specify the version of Maven to use, you can edit the pom.xml file and add a <version> element to the <project> element. For example:
+
+``` xml
+<project>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>my-project</artifactId>
+  <version>3.6.3</version>
+  ...
+</project>
+```
+This will use **version 3.6.3 of Maven** for the project.
+
+## Step-by-step screenshots (2022-1214)
+
+[Screenshoots Create Maven Project](https://drive.google.com/drive/folders/1V9tQJT08yUVzBWZJKXP3xzTk6tdBUanh?usp=sharing)
+
