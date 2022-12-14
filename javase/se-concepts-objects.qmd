@@ -1,6 +1,116 @@
 ---
-title: "Java SE: Objects"
+title: "Java SE: Class and Objects"
 ---
+
+::: {.summary}
+**📘 What is a Java Object**
+
+An object in Java is a **container that holds both data and behavior**. The data is represented by the object's attributes, and the behavior is represented by the methods that operate on those attributes.
+
+When you create an object, you are creating an **instance of a class**, which is a blueprint or template for the object.
+:::
+---
+
+::: {.summary}
+**📘 What is a Java Class**
+
+A Java class is a **template for creating objects, defining object data types and methods**. A class is a blueprint for objects, and an object is an instance of a class. 
+
+In other words, a class defines the properties and behaviors that objects created from the class will have. 
+
+<mark>For example, if you have a class called "Dog," objects created from that class might have properties like "breed" and "age," as well as behaviors like "bark" and "fetch."</mark> Classes are an important concept in object-oriented programming, and are a fundamental building block of Java programs
+
+:::
+---
+
+::: {.callout-note collapse="true"}
+## Person class
+``` java
+public class Person {
+  //fields  
+  private int age;
+  private String name;
+  private String address;
+  private double salary;
+  
+  //constructor
+  public Person(int age, String name, String address, double salary) {
+    this.age = age;
+    this.name = name;
+    this.address = address;
+    this.salary = salary;
+  }
+  
+  //methods
+  public int getAge() {
+    return age;
+  }
+  
+  public void setAge(int age) {
+    this.age = age;
+  }
+  
+  public String getName() {
+    return name;
+  }
+  
+  public void setName(String name) {
+    this.name = name;
+  }
+  
+  public String getAddress() {
+    return address;
+  }
+  
+  public void setAddress(String address) {
+    this.address = address;
+  }
+  
+  public double getSalary() {
+    return salary;
+  }
+  
+  public void setSalary(double salary) {
+    this.salary = salary;
+  }
+  
+  public void study() {
+    // Do some work here
+  }
+  
+  public void receivePaycheck() {
+    // Process salary and distribute paychecks
+  }
+
+  public void getOlder() {
+    this.age++;
+  }
+}
+
+```
+:::
+
+## Introduction
+
+<mark>Each object has its own unique identity, and it maintains its own state by storing the values of its attributes. The object's behavior is defined by the methods that operate on its attributes, and these methods can be invoked by other code to ask the object to perform a specific action<mark>.
+
+Objects are an essential concept in object-oriented programming, and they are used to model real-world entities in a program. For example, you could create an object to represent a particular person, with attributes such as name, age, and address, and methods that operate on these attributes, such as a method to calculate their age in a particular year.
+
+In Java, you can create objects by using the `new` keyword and the class constructor to allocate memory for the object, and then you can access the object's attributes and methods by using the `.` (dot) operator. For example, if you have a class called `Person`, you could create an object of that class like this:
+
+``` java
+Person carla = new Person();
+```
+
+And then you could access the object's attributes and methods like this:
+
+``` java
+person.name = "Carla Whitesand";
+person.setAddress("123 Main Street");
+int age = person.calculateAge(2022);
+```
+
+In this example, `name` and `setAddress()` are attributes and methods of the `Person` class, and `person` is an object of that class. You can use this object to store and manipulate data according to the rules defined by the class.
 
 ## Creating Objects
 

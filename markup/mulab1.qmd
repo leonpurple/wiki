@@ -76,14 +76,14 @@ Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) 
 
 ![Step-by-step guide to create and publish a Quarto website](/images/about/quarto_website.png){#markdown-lab1}
 
-1. Installations:
-    1. **Visual Code**
-      1. Install GitHub Extension and Source Control (maybe the come with Visual Code)
-      2. Sign in GitHub in Visual Code (wizard)
-      3. Install **Quarto Extension** in Visual Code
-    2. **Quarto** in your OS (download from Quarto site)
+1. Install some software and Sign in:
+    1. Install **Visual Code**
+      1. Install GitHub Extension and Source Control if they don't come with new installation
+      2. Install **Quarto Extension** in Visual Code
+    2. Sign in GitHub from Visual Code (wizard)
+    2. Install **Quarto** in your OS (download from [Quarto site - Get started](https://quarto.org/docs/get-started/))
 2. [Create Quarto Project](/markup/markupquartocreating.qmd)
-3. GitHub jobs:
+3. GitHub tasks:
     1. *Create repository, commit and push* files to repository with <mark>Sync tool</mark>. To write our repository you need to:
         - Create Token on GitHub.com: [Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
         - Use this token on your Visual Code - Git, [link](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git):
