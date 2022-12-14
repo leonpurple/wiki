@@ -62,3 +62,15 @@ Each phase of the Maven lifecycle consists of a set of build phases, which are e
 Each build phase consists of a set of build goals, which are the specific tasks that are executed to accomplish the phase's objectives. For example, the compile phase has a build goal called compiler:compile that is responsible for compiling the project's source code.
 
 By following the defined Maven lifecycle, developers can **easily build, test, and distribute their Java projects in a consistent and repeatable manner**.
+
+## Archetype, GroupId, ArtifactId
+
+An **archetype is a template for a project**. It provides a predefined **structure and files** for a project, so that you don't have to create them manually.
+
+GroupId and artifactId are two important elements of a Maven project. 
+
+The **groupId** is a unique identifier for a project, and is typically used to group related projects together.
+
+The **artifactId** is the unique identifier for a specific project, and is used to identify the project within the group.
+
+Together, the groupId and artifactId help to uniquely identify a project within the Maven ecosystem.

@@ -38,5 +38,8 @@ Here are the steps to create a **Linux Mint virtual machine using VirtualBox**:
 11. Remove the iso from the **Controller:IDE>Optic unit>Choose file**.
 12. Once the installation is complete, you can use the virtual machine to **run Linux Mint and any applications that are compatible with the operating system**. You can also customize the virtual machine's settings and virtual hardware to suit your needs.
 13. Install **Guest Additions**:
-    13.1. How to Install VirtualBox Guest Additions in Linux Mint 19.1 by [Linux Distro Installation Guide](https://www.youtube.com/playlist?list=PLc0sbYjRrifp-iOoQ1VhAbvQmFfrv1QLa)
+    13.1. [How to Install VirtualBox Guest Additions in Linux Mint 19.1](https://www.youtube.com/watch?v=hbG5mU1Hb9s) by [Linux Distro Installation Guide](https://www.youtube.com/playlist?list=PLc0sbYjRrifp-iOoQ1VhAbvQmFfrv1QLa)
+
+    {{< video https://youtu.be/hbG5mU1Hb9s >}}
+    
 
