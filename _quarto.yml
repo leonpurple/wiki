@@ -27,7 +27,7 @@ website:
       - sidebar:reactjs
       - sidebar:devops
       - sidebar:vocabulary
-      - sidebar:ifcd0210
+      - sidebar:ifcd
       - sidebar:about
 
   sidebar:
@@ -129,7 +129,7 @@ website:
           contents: 
             - markup/resources.qmd
             
-    - id: scrum
+    - id: "scrum"
       title: "SCRUM"
       contents: 
         - text: "SCRUM"
@@ -258,8 +258,7 @@ website:
             - reactjs/resources.qmd
 
     
-    - id: "ifcd0210"
-    - text: SCRUM
+    - id: "ifcd"
       title: "IFCD0210"
       contents: 
         - text: "IFCD0210"

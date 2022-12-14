@@ -11,8 +11,6 @@ title: "Java SE: Maven"
 
 ---
 
-## Dependencyse-concepts-maven `Maven` for Java projects.
-
 These tools allow developers to specify the dependencies for their project in a file, and then automatically handle the process of downloading and installing those dependencies. This can save a lot of time and effort for developers, and helps ensure that all of the necessary dependencies are present and up-to-date in a project.
 
 

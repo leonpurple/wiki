@@ -27,7 +27,18 @@ The most important for us will be to make a branch `gh-pages` the first time **w
 ::: {.callout-note collapse="true" icon=false}
 ## (0) Files On Repository
 
-Your need to create a repository on GitHub with the Quarto pages .qmd pushed there.
+Your need to create a repository on GitHub with the Quarto pages ``.qmd`` pushed there.
+
+**Create repository, commit and push** files to repository with <mark>Sync tool</mark>. To write our repository you need to:
+
+1. Create Token on GitHub.com: [Creating a personal access token](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
+2. Use this token on your Visual Code - Git, [link](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git):
+
+``` bash
+$git config --global user.name "Mona Lisa"
+$git config --global user.mail "monalisa@davinci.com"
+$git config --global user.password "4WTVEG43_Q34WG435GAWER4_Q4vsrsrggr_3D44"
+```
 
 :::
 
@@ -35,6 +46,25 @@ Your need to create a repository on GitHub with the Quarto pages .qmd pushed the
 ::: {.callout-tip collapse="true" icon=false}
 ## (1) Activate GitHub Pages service
 You can modify these options in Settings : Pages for your repository. 
+
+:::{.callout-note  collapse="true" }
+
+## gh-pages activation
+
+![fig 13](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(13).png)
+:::
+:::{.callout-note  collapse="true" }
+
+## at first gh-pages branck doesn't exist: don't worry, quarto will create later
+
+![fig 14](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(14).png)
+:::
+:::{.callout-note  collapse="true" }
+
+## master is our branch: root
+
+![fig 15](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(15).png)
+:::
 
 :::
 
