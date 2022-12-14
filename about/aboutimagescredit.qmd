@@ -8,6 +8,7 @@ title: "About images credit"
 - Java Programming Tutorial Object-oriented Programming (OOP) Basics: [www3.ntu.edu.sg](https://www3.ntu.edu.sg/home/ehchua/programming/java/J3a_OOPBasics.html)[^2]
 - Singleton Design Pattern: [Singleton Design Pattern](https://springhow.com/singleton-pattern/)[^1]
 - Get Java for desktop applications: [Java](https://www.java.com/en/) / [Download Java](https://www.java.com/en/download/) / [What is Java technology and why do I need it?](https://www.java.com/en/download/help/whatis_java.html)[^3]
+- Driving Augmented Intelligence [Test Driven Development (TDD) Tools and Agile Process](https://www.xenonstack.com/blog/test-driven-development-java)[^3]
 
 [^1]: random web, *just crediting the image*
 [^2]: very useful and **recommended resource**

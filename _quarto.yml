@@ -19,30 +19,20 @@ website:
     right:
       - text: Home
         file: index.qmd
-      - text: SCRUM
-        file: scrum/scrum.qmd
-      - text: Markup & Style
-        file: markup/markupintro.qmd
-      - text: Linux
-        file: linux/linux-what-basics.qmd       
-      - text: Java SE
-        file: javase/se-what-basics.qmd 
-      - text: Spring
-        file: spring/spring.qmd
-      - text: React JS
-        file: reactjs/reactjs.qmd  
-      - text: DevOps
-        file: devops/introductiondevops.qmd
-      - text: "Vocabulary"
-        file: vocabulary/vocabgeneral.qmd
-      - text: "IFCD0210"
-        file: ifcd0210/ifcd0210.qmd
-      - text: About
-        file: about/aboutthissite.qmd
-   
+      - sidebar:scrum
+      - sidebar:markup
+      - sidebar:linux
+      - sidebar:javase
+      - sidebar:spring   
+      - sidebar:reactjs
+      - sidebar:devops
+      - sidebar:vocabulary
+      - sidebar:ifcd0210
+      - sidebar:about
 
   sidebar:
-    - title: "DevOps"
+    - id: "devops"
+      title: "DevOps"
       border: true
       collapse-level: 1
       background: none
@@ -91,7 +81,24 @@ website:
           contents: 
             - devops/resources.qmd
 
-    - title: "MarkUp"
+    - id: "linux"
+      title: "Linux OS"
+      contents: 
+        - text: "Linux OS"
+        - text: "---"  
+        - section: "Linux: concepts"
+          contents: 
+            - linux/linux-what-basics.qmd
+            - linux/linux-what-vm.qmd
+        - text: "---"  
+        - section: "Linux: distros"
+          contents: 
+            - linux/linux-distros-mint.qmd
+            - linux/linux-distros-debian.qmd
+            - linux/linux-distros-opensuse.qmd
+            
+    - id: "markup"
+      title: "MarkUp"
       contents: 
         - text: "MarkUp Languages and Styling"
         - text: "---"  
@@ -118,11 +125,12 @@ website:
           contents: 
             - markup/mulab1.qmd
         - text: "---" 
-        - section: "MarkUp Languages readings"
+        - section: "MarkUp Langjavaseuages readings"
           contents: 
             - markup/resources.qmd
             
-    - title: "SCRUM"
+    - id: scrum
+      title: "SCRUM"
       contents: 
         - text: "SCRUM"
         - text: "---"  
@@ -141,7 +149,8 @@ website:
             - scrum/week4.qmd
             - scrum/week5.qmd
  
-    - title: "Java SE"
+    - id: "javase"
+      title: "Java SE"
       contents: 
         - text: "Java Standard Edition"
         - text: "---"  
@@ -189,7 +198,8 @@ website:
           contents: 
             - javase/resources.qmd
 
-    - title: "Spring"
+    - id: "spring"
+      title: "Spring"
       contents:
         - text: "Spring"
         - text: "---"  
@@ -214,14 +224,14 @@ website:
           contents: 
             - springboot/resources.qmd
         
-    - title: "React JS"
+    - id: "reactjs"
+      title: "React JS"
       contents: 
         - text: "React JS"
         - text: "---"  
         - section: "React JS Principles"
           contents: 
             - reactjs/reactjs.qmd
-        - text: "---"  
         - section: "React JS Hooks"
           contents: 
             - reactjs/hookstate.qmd
@@ -247,7 +257,9 @@ website:
             - reactjs/resources.qmd
 
     
-    - title: "IFCD0210"
+    - id: "ifcd0210"
+    - text: SCRUM
+      title: "IFCD0210"
       contents: 
         - text: "IFCD0210"
         - text: "---"  
@@ -258,7 +270,8 @@ website:
             - ifcd0210/ifcd0210initemail.qmd  
             - ifcd0210/ifcd0210deliveries.qmd  
         
-    - title: "Vocabulary"
+    - id: "vocabulary"
+      title: "Vocabulary"
       contents: 
         - text: "Vocabulary"
         - text: "---"  
@@ -279,7 +292,8 @@ website:
             - vocabulary/vocabreactjs.qmd 
             - vocabulary/vocabweb.qmd          
 
-    - title: "About"
+    - id: "about"
+      title: "About"
       contents: 
         - text: "About"
         - text: "---"  
