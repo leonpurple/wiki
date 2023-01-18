@@ -61,7 +61,7 @@ You can modify these options in Settings : Pages for your repository.
 :::
 :::{.callout-note  collapse="true" }
 
-## master is our branch: root
+## gh-pages is our branch: root
 
 ![fig 15](../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages%20(15).png)
 :::
