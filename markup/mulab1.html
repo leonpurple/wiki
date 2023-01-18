@@ -1,0 +1,1921 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>albertprofe wiki - Lab#MD01-1: Create and publish by Quarto</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({
+  "notice_banner_type":"headline",
+  "consent_type":"express",
+  "palette":"dark",
+  "language":"en",
+  "page_load_consent_levels":["strictly-necessary"],
+  "notice_banner_reject_button_hide":false,
+  "preferences_center_close_button_hide":false,
+  "website_name":""
+  });
+});
+</script> 
+  
+
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar floating nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">albertprofe wiki</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-linux-os" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Linux OS</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-linux-os">    
+        <li class="dropdown-header">Linux: concepts</li>
+        <li>
+    <a class="dropdown-item" href="../linux/linux-what-basics.html">
+ <span class="dropdown-text">Linux: basic concepts</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../linux/linux-what-vm.html">
+ <span class="dropdown-text">Linux: Virtual Machines</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Linux: distros</li>
+        <li>
+    <a class="dropdown-item" href="../linux/linux-distros-mint.html">
+ <span class="dropdown-text">Linux Distros: Mint</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../linux/linux-distros-debian.html">
+ <span class="dropdown-text">Linux Distros: Debian</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../linux/linux-distros-opensuse.html">
+ <span class="dropdown-text">Linux Distros: openSuse</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-markup" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">MarkUp</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-markup">    
+        <li class="dropdown-header">MarkUp Languages</li>
+        <li>
+    <a class="dropdown-item" href="../markup/markupintro.html">
+ <span class="dropdown-text">Introduction Markup</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markuphtml.html">
+ <span class="dropdown-text">HTML Markup</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markupdown.html">
+ <span class="dropdown-text">Markdown Markup</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markuphtmlrelation.html">
+ <span class="dropdown-text">Markdown and HTML working together, good idea?</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Quarto Markdown</li>
+        <li>
+    <a class="dropdown-item" href="../markup/markupquarto.html">
+ <span class="dropdown-text">Quarto Markdown: basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markupquartocreating.html">
+ <span class="dropdown-text">Quarto Markdown: creating</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markupquartopublishing.html">
+ <span class="dropdown-text">Quarto Markdown: publishing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markupquartoprogramming.html">
+ <span class="dropdown-text">Quarto Markdown: data sources</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Styling: CSS</li>
+        <li>
+    <a class="dropdown-item" href="../markup/markupcss.html">
+ <span class="dropdown-text">Cascade Style Sheet</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../markup/markupw3css.html">
+ <span class="dropdown-text">CSS: W3.css</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">MarkUp Languages Laboratories</li>
+        <li>
+    <a class="dropdown-item" href="../markup/mulab1.html">
+ <span class="dropdown-text">Lab#MD01-1: Create and publish by Quarto</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">MarkUp Langjavaseuages readings</li>
+        <li>
+    <a class="dropdown-item" href="../markup/resources.html">
+ <span class="dropdown-text">MarkUp Languages Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-java-se" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Java SE</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-java-se">    
+        <li class="dropdown-header">What is Java SE</li>
+        <li>
+    <a class="dropdown-item" href="../javase/se-what-basics.html">
+ <span class="dropdown-text">Java Standard Edition: Basics</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-what-principles.html">
+ <span class="dropdown-text">Java Standard Edition: Principles</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-what-moochelsinki.html">
+ <span class="dropdown-text">Java MOOC Helsinki</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Java Concepts</li>
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-maven.html">
+ <span class="dropdown-text">Java SE: Maven</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-createproject.html">
+ <span class="dropdown-text">Java SE: Create Maven Project</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-tdd.html">
+ <span class="dropdown-text">Java SE: JUnit and TDD</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-objects.html">
+ <span class="dropdown-text">Java SE: Class and Objects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-scope.html">
+ <span class="dropdown-text">Java SE: Scope</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-static.html">
+ <span class="dropdown-text">Java SE: static modifier</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-coupling.html">
+ <span class="dropdown-text">Java SE: Coupling/Cohesion</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-concepts-package.html">
+ <span class="dropdown-text">Java SE: Packages</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Java Principles</li>
+        <li>
+    <a class="dropdown-item" href="../javase/se-principles-encapsulation.html">
+ <span class="dropdown-text">Java SE: Encapsulation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-principles-abstraction.html">
+ <span class="dropdown-text">Java SE: Abstraction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-principles-inheritance.html">
+ <span class="dropdown-text">Java SE: Inherence</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-principles-polymorphism.html">
+ <span class="dropdown-text">Java SE: Polymorphism</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Java Design Patterns</li>
+        <li>
+    <a class="dropdown-item" href="../javase/se-pattern-intro.html">
+ <span class="dropdown-text">Java SE Design-Patterns</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-pattern-singleton.html">
+ <span class="dropdown-text">Java Patterns: Singleton</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-pattern-factory.html">
+ <span class="dropdown-text">Java Patterns: Factory</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-pattern-abstractfactory.html">
+ <span class="dropdown-text">Java Patterns: Abstract Factory</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-pattern-observer.html">
+ <span class="dropdown-text">Java Patterns: Observer</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/se-pattern-builder.html">
+ <span class="dropdown-text">Java Patterns: Builder</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Java SE Laboratories</li>
+        <li>
+    <a class="dropdown-item" href="../javase/selab1-1.html">
+ <span class="dropdown-text">Lab#SE01-1: Maven/Gradle Person and Account</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/selab1-2.html">
+ <span class="dropdown-text">Lab#SE01-2: Maven/Gradle Person and Account stored in JSON</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/selab3.html">
+ <span class="dropdown-text">Lab 3: subject</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/selab4.html">
+ <span class="dropdown-text">Lab 4: subject</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../javase/selab5.html">
+ <span class="dropdown-text">Lab 5: subject</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Java SE readings</li>
+        <li>
+    <a class="dropdown-item" href="../javase/resources.html">
+ <span class="dropdown-text">Java SE Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-spring" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Spring</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-spring">    
+        <li class="dropdown-header">Spring Legacy</li>
+        <li>
+    <a class="dropdown-item" href="../spring/spring.html">
+ <span class="dropdown-text">Spring</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../spring/springmvc.html">
+ <span class="dropdown-text">Spring MVC</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Spring Boot</li>
+        <li>
+    <a class="dropdown-item" href="../springboot/springboot.html">
+ <span class="dropdown-text">Spring Boot</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Spring Boot Laboratories</li>
+        <li>
+    <a class="dropdown-item" href="../springboot/sblab1.html">
+ <span class="dropdown-text">Lab 1: Spring Boot Projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/sblab2.html">
+ <span class="dropdown-text">Lab 2: Spring Boot Projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/sblab3.html">
+ <span class="dropdown-text">Lab 3: Spring Boot Projects</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/sblab4.html">
+ <span class="dropdown-text">Lab 4: Spring Boot Projects <code>JPA Inherence</code> strategies</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../springboot/sblab5.html">
+ <span class="dropdown-text">Lab 5: subject</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Spring Boot readings</li>
+        <li>
+    <a class="dropdown-item" href="../springboot/resources.html">
+ <span class="dropdown-text">Spring Boot Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-react-js" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">React JS</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-react-js">    
+        <li class="dropdown-header">React JS Principles</li>
+        <li>
+    <a class="dropdown-item" href="../reactjs/reactjs.html">
+ <span class="dropdown-text">React JS: Introduction</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">React JS Hooks</li>
+        <li>
+    <a class="dropdown-item" href="../reactjs/hookstate.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/hookreducer.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/hookref.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/hookeffect.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/hookcustom.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Context and Provider</li>
+        <li>
+    <a class="dropdown-item" href="../reactjs/reactjscontext.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">React JS Laboratories</li>
+        <li>
+    <a class="dropdown-item" href="../reactjs/rjslab1.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/rjslab2.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/rjslab3.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/rjslab4.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../reactjs/rjslab5.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">React JS readings</li>
+        <li>
+    <a class="dropdown-item" href="../reactjs/resources.html">
+ <span class="dropdown-text">React JS</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-scrum" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">SCRUM</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-scrum">    
+        <li class="dropdown-header">What is SCRUM</li>
+        <li>
+    <a class="dropdown-item" href="../scrum/scrum.html">
+ <span class="dropdown-text">SCRUM</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/agilemanifesto.html">
+ <span class="dropdown-text">Agile Manifesto</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/scrumguide.html">
+ <span class="dropdown-text">SCRUM Guide</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/digitaltoolsscrum.html">
+ <span class="dropdown-text">Digital Tools SCRUM</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Weeks</li>
+        <li>
+    <a class="dropdown-item" href="../scrum/week1.html">
+ <span class="dropdown-text">Week 1: Meetings and impediments</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/week2.html">
+ <span class="dropdown-text">Week 2: User stories, tasks and habits</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/week3.html">
+ <span class="dropdown-text">Week 3: Communication and value</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/week4.html">
+ <span class="dropdown-text">Week 4: ScrumMaster, how it works</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../scrum/week5.html">
+ <span class="dropdown-text">Week 5: Mindset, the key to everythng</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-devops" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">DevOps</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-devops">    
+        <li class="dropdown-header">What is DevOps</li>
+        <li>
+    <a class="dropdown-item" href="../devops/introductiondevops.html">
+ <span class="dropdown-text">Introduction</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/devops.html">
+ <span class="dropdown-text">DevOps</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Documentation</li>
+        <li>
+    <a class="dropdown-item" href="../devops/quarto.html">
+ <span class="dropdown-text">Quarto and Markdown</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Version Control</li>
+        <li>
+    <a class="dropdown-item" href="../devops/git.html">
+ <span class="dropdown-text">Git</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/github.html">
+ <span class="dropdown-text">GitHub</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">IDEs</li>
+        <li>
+    <a class="dropdown-item" href="../devops/visualcode.html">
+ <span class="dropdown-text">Visual Studio Code</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/intelljidea.html">
+ <span class="dropdown-text">IntellJIdea</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/netbeans.html">
+ <span class="dropdown-text">NetBeans</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">DevOps tools</li>
+        <li>
+    <a class="dropdown-item" href="../devops/aws.html">
+ <span class="dropdown-text">Aamanzon Web Sevices AWS</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/docker.html">
+ <span class="dropdown-text">Docker</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/jenkins.html">
+ <span class="dropdown-text">Jenkins pipelines</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/k8s.html">
+ <span class="dropdown-text">Kubernetes k8s</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/digitalocean.html">
+ <span class="dropdown-text">Digital Ocean</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/installjenkins.html">
+ <span class="dropdown-text">Howto install Jenkins</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/installmaven.html">
+ <span class="dropdown-text">Howto install Maven</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">DevOps Laboratories</li>
+        <li>
+    <a class="dropdown-item" href="../devops/chatapp.html">
+ <span class="dropdown-text">Lab 1: chat App</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/springbooksintro.html">
+ <span class="dropdown-text">Lab 2: Spring Boot Intro</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/springbookss3.html">
+ <span class="dropdown-text">Lab 3: Spring Boot and AWS S3</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/springbooksdocker.html">
+ <span class="dropdown-text">Lab 4: Spring Boot and Docker</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../devops/k8sdigitalocean.html">
+ <span class="dropdown-text">Lab 5: k8s on Digital Ocean</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">DevOps readings</li>
+        <li>
+    <a class="dropdown-item" href="../devops/resources.html">
+ <span class="dropdown-text">Resources</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-vocabulary" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Vocabulary</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-vocabulary">    
+        <li class="dropdown-header">General Vocabulary</li>
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabgeneral.html">
+ <span class="dropdown-text">General Vocabulary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabscrum.html">
+ <span class="dropdown-text">SCRUM Vocabulay</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabdevops.html">
+ <span class="dropdown-text">DevOps Vocabulary</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Back-end Vocabulary</li>
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabjava.html">
+ <span class="dropdown-text">Java SE Vocabulay</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabspringboot.html">
+ <span class="dropdown-text">Spring Boot Vocabulay</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabdatabase.html">
+ <span class="dropdown-text">DataBase Vocabulary</span></a>
+  </li>  
+        <li><hr class="dropdown-divider"></li>
+        <li class="dropdown-header">Front-end Vocabulary</li>
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabreactjs.html">
+ <span class="dropdown-text">ReactJS Vocabulary</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../vocabulary/vocabweb.html">
+ <span class="dropdown-text">Web Vocabulary</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="dropdown-header">
+ <span class="menu-text">sidebar:ifcd</span></li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-about" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">About</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-about">    
+        <li class="dropdown-header">About</li>
+        <li>
+    <a class="dropdown-item" href="../about/aboutme.html">
+ <span class="dropdown-text">About me</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aboutthissite.html">
+ <span class="dropdown-text">About this site</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aboutlearning.html">
+ <span class="dropdown-text">About learning</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aboutimagescredit.html">
+ <span class="dropdown-text">About images credit</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../about/aboutquestions.html">
+ <span class="dropdown-text">About the Useful Questions</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+              <div class="quarto-toggle-container">
+                  <a href="" class="quarto-color-scheme-toggle nav-link" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+              </div>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title">Lab#MD01-1: Create and publish by Quarto</h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  MarkUp Languages and Styling
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">MarkUp Languages</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupintro.html" class="sidebar-item-text sidebar-link">Introduction Markup</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markuphtml.html" class="sidebar-item-text sidebar-link">HTML Markup</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupdown.html" class="sidebar-item-text sidebar-link">Markdown Markup</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markuphtmlrelation.html" class="sidebar-item-text sidebar-link">Markdown and HTML working together, good idea?</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">Quarto Markdown</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupquarto.html" class="sidebar-item-text sidebar-link">Quarto Markdown: basics</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupquartocreating.html" class="sidebar-item-text sidebar-link">Quarto Markdown: creating</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupquartopublishing.html" class="sidebar-item-text sidebar-link">Quarto Markdown: publishing</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupquartoprogramming.html" class="sidebar-item-text sidebar-link">Quarto Markdown: data sources</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">Styling: CSS</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupcss.html" class="sidebar-item-text sidebar-link">Cascade Style Sheet</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/markupw3css.html" class="sidebar-item-text sidebar-link">CSS: W3.css</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">MarkUp Languages Laboratories</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/mulab1.html" class="sidebar-item-text sidebar-link active">Lab#MD01-1: Create and publish by Quarto</a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">MarkUp Langjavaseuages readings</a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" aria-expanded="false">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../markup/resources.html" class="sidebar-item-text sidebar-link">MarkUp Languages Resources</a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#step-by-step" id="toc-step-by-step" class="nav-link" data-scroll-target="#step-by-step">Step-by-step</a></li>
+  <li><a href="#screen-shoots-2022-12-12" id="toc-screen-shoots-2022-12-12" class="nav-link" data-scroll-target="#screen-shoots-2022-12-12">Screen-shoots (2022-12-12)</a></li>
+  <li><a href="#screen-shoots-2022-12-08" id="toc-screen-shoots-2022-12-08" class="nav-link" data-scroll-target="#screen-shoots-2022-12-08">Screen-shoots (2022-12-08)</a></li>
+  </ul>
+<div class="toc-actions"><div><i class="bi bi-github"></i></div><div class="action-links"><p><a href="https://github.com/quarto-dev/quarto-demo/edit/main/markup/mulab1.qmd" class="toc-action">Edit this page</a></p><p><a href="https://github.com/quarto-dev/quarto-demo/issues/new" class="toc-action">Report an issue</a></p></div></div></nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block">Lab#MD01-1: Create and publish by Quarto</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>Create and publish a website on GitHub pages (Git on cloud and deploy pipeline) with Visual (IDE) Code and Quarto (publishing system/engine)</p>
+<!-- card labs with five tabs: before, goal, tasks, after, optional -->
+<div class="labs">
+<h5 class="anchored">
+💻 Lab#MD01-1: Publishing website by Quarto engine
+</h5>
+<hr>
+<div class="tabs">
+
+<!-- tab: before -->
+<input type="radio" class="tabs__radio" name="tabs-example" id="before" checked=""> <label for="before" class="tabs__label">Before</label>
+<div class="tabs__content">
+<p class="indent">
+Students will need to have a <strong>basic understanding of web development</strong>, including HTML, CSS, and JavaScript. <br>
+</p>
+</div>
+<!--tab: goal --> <input type="radio" class="tabs__radio" name="tabs-example" id="goal"> <label for="goal" class="tabs__label">Goal</label>
+<div class="tabs__content">
+<p class="indent">
+In this project, students will be required to create a <strong>web application using basically Markdown, flavour Quarto</strong>, and when it is necessary HTML, JS and CSS<strong>. <br><br>Additionally, they will need to use </strong>GitHub and Visual Code** to manage their project’s code and collaborate with their peers. <br>
+</p>
+</div>
+<!--tab: tasks --> <input type="radio" class="tabs__radio" name="tabs-example" id="tasks"> <label for="tasks" class="tabs__label">Tasks</label>
+<div class="tabs__content">
+<p class="indent">
+The tasks involved in this project include: <br>
+</p><ol type="1" class="indent">
+<li>
+In the first part of the project, students will create a <strong>basic web page using markdown and publish it on Github repository</strong> using Visual Code. This will involve creating a new repository on Github and learning how to use markdown to format text and create links.
+</li>
+<li>
+In the second part of the project, students will learn how to <strong>publish their website on gh-pages</strong>, a service provided by Github for hosting static websites. This will involve learning how to use the gh-pages service and how to deploy their website to the internet.
+</li>
+</ol>
+<p class="indent">
+You should check your website on <strong>user/github.io/repo</strong>.
+</p>
+<p></p>
+</div>
+<!--tab: optional --> <input type="radio" class="tabs__radio" name="tabs-example" id="optional"> <label for="optional" class="tabs__label">Optional</label>
+<div class="tabs__content">
+<p class="indent">
+As an optional study, students may also want to learn about using <strong>callouts in their markdown documentation</strong>. The following links provide useful information on the topic: <br>
+</p><ol type="1" class="indent">
+<li>
+<mark><a href="https://oprypin.github.io/markdown-callouts/">markdown-callouts</a></mark>
+</li>
+<li>
+<mark><a href="https://quarto.org/docs/authoring/callouts.html">Callout Blocks Quarto</a></mark>
+</li>
+<li>
+<mark><a href="https://rdmd.readme.io/docs/getting-started">Getting Started with RDMD</a></mark>
+</li>
+<li>
+<mark><a href="https://quarto.org/docs/authoring/markdown-basics.html#divs-and-spans">Divs and spans</a></mark>
+</li>
+<li>
+<mark><a href="https://codepen.io/dongmikim/pen/VwLqyjQ">codepen.io HTML+CSS</a></mark>
+</li>
+<li>
+<mark><a href="https://www.w3schools.com/howto/howto_js_tabs.asp">How TO - Tabs W3.CSS HTML+CSS+JS</a></mark>
+</li>
+</ol>
+<p class="indent">
+Using <strong>callouts, links, tabs and CSS</strong> can help to improve the readability and organization of a markdown document, making it easier for readers to understand and navigate the content. <br> <br> To take their project to the next level, students may also choose to connect to an <strong>API</strong> (Application Programming Interface) to <strong>retrieve data and render charts using JavaScript</strong>. This will require an understanding of how to make HTTP requests and how to manipulate data in JavaScript.
+</p>
+<p class="indent">
+<mark><a href="../markup/markupquartoprogramming.html">Quarto data sources</a></mark>
+</p>
+</div>
+<!--tab: after --> <input type="radio" class="tabs__radio" name="tabs-example" id="after"> <label for="after" class="tabs__label">After</label>
+<div class="tabs__content">
+<p class="indent">
+The Quarto website project is a great opportunity for students to develop their skills in <strong>web development, markdown, and version control using GitHub and Visual Code</strong>. <br><br>
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="step-by-step" class="level2">
+<h2 class="anchored" data-anchor-id="step-by-step">Step-by-step</h2>
+<div id="markdown-lab1" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="..\images/about/quarto_website.png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">Step-by-step guide to create and publish a Quarto website</figcaption><p></p>
+</figure>
+</div>
+<ol type="1">
+<li>Install some software and Sign in:
+<ol type="1">
+<li>Install <strong>Visual Code</strong></li>
+<li>Install GitHub Extension and Source Control if they don’t come with new installation</li>
+<li>Install <strong>Quarto Extension</strong> in Visual Code</li>
+<li>Sign in GitHub from Visual Code (wizard)</li>
+<li>Install <strong>Quarto</strong> in your OS (download from <a href="https://quarto.org/docs/get-started/">Quarto site - Get started</a>)</li>
+</ol></li>
+<li><a href="../markup/markupquartocreating.html">Create Quarto Project</a></li>
+<li>GitHub tasks:
+<ol type="1">
+<li><em>Create repository, commit and push</em> files to repository with <mark>Sync tool</mark>. To write our repository you need to:
+<ul>
+<li><p>Create Token on GitHub.com: <a href="https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">Creating a personal access token</a></p></li>
+<li><p>Use this token on your Visual Code - Git, <a href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git">link</a>:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">$git</span> config <span class="at">--global</span> user.name <span class="st">"Mona Lisa"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">$git</span> config <span class="at">--global</span> user.mail <span class="st">"monalisa@davinci.com"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">$git</span> config <span class="at">--global</span> user.paasword <span class="st">"4WTVEG43_Q34WG435GAWER4_Q4vsrsrggr_3D44"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul></li>
+<li>Activate <mark>gh-pages service</mark></li>
+</ol></li>
+<li><code>quarto render</code> and <code>quarto publish gh-pages</code> / <code>quarto publish</code> on Visual Code’s terminal
+<ol type="1">
+<li><a href="../markup/markupquartopublishing.html">Publish Quarto Project</a></li>
+<li><a href="../markup/markupquarto.html">Improve your Quarto Project</a></li>
+</ol></li>
+<li>Go to published web:<code>user/github.io/repo</code></li>
+</ol>
+</section>
+<section id="screen-shoots-2022-12-12" class="level2">
+<h2 class="anchored" data-anchor-id="screen-shoots-2022-12-12">Screen-shoots (2022-12-12)</h2>
+<p><a href="https://drive.google.com/drive/folders/1fV85crifRwAvL63ERIRhPmIoTsbsEeTW?usp=share_link">Log in to GitHub and Quarto Creation</a></p>
+</section>
+<section id="screen-shoots-2022-12-08" class="level2">
+<h2 class="anchored" data-anchor-id="screen-shoots-2022-12-08">Screen-shoots (2022-12-08)</h2>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Basic Quarto Project
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (1).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 1</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Initialize Repository and Publish
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (2).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 2</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+You may use another Extensions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (3).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 3</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+let s do a commit but .. first
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (4).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 4</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+we need to publish branch
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (5).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 5</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Permission
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (6).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 6</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Permission
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (7).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 7</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+publish in public repository: name
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (8).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 8</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+repository name: wiki is better! :-)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (9).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 9</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+repository name: publishing
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (10).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 10</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+this tree folder is publising
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (11).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 11</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+tree folder in github
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-12" class="callout-12-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (12).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 12</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+gh-pages activation
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-13" class="callout-13-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (13).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 13</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+at first gh-pages branck doesn’t exist: don’t worry, quarto will create later
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-14" class="callout-14-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (14).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 14</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+master is our branch: root
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-15" class="callout-15-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (15).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 15</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+there is just one brach: master (brach gh-pages NOT YET)
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-16" class="callout-16-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (16).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 16</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+render
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-17" class="callout-17-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (17).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 17</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+quarto publish
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-18" class="callout-18-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (18).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 18</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+yes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-19" class="callout-19-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (19).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 19</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+now: brach created
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-20" class="callout-20-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (20).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 20</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+and … gh pages now has got the gh-pages branch selected
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-21" class="callout-21-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (21).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 21</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+we may check all is right: commit
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-22" class="callout-22-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (22).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 22</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+we may check all is right: deploy
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-23" class="callout-23-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (23).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 23</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+we may check all is right: actions
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-24" class="callout-24-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (24).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 24</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+web deployed: live
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-25" class="callout-25-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (25).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 25</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+log publising terminal 1/4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-26" class="callout-26-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (26).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 26</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+log publising terminal 2/4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-27" class="callout-27-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (27).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 27</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+log publising terminal 3/4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-28" class="callout-28-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (28).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 28</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="true" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+log publising terminal 4/4
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-29" class="callout-29-contents callout-collapse collapse show">
+<div class="callout-body-container callout-body">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../images/markup/publish_quarto_gh-pages/publish_quarto_website_gh-pages (29).png" class="img-fluid figure-img"></p>
+<p></p><figcaption class="figure-caption">fig 29</figcaption><p></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  let localAlternateSentinel = 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left"><a href="https://creativecommons.org/licenses/by/4.0/">Attribution 4.0 International (CC BY 4.0)</a></div>   
+      <div class="nav-footer-center">if you want to go far, walk slow<div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/AlbertProfe/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://twitter.com/">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
